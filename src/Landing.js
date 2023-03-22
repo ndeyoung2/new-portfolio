@@ -1,15 +1,17 @@
-import React from "react";
-import { motion, useAnimation } from "framer-motion";
+import React, {useState} from "react";
+import { motion, useAnimation, useScroll } from "framer-motion";
 import { Card } from "react-bootstrap";
 
+
 const Landing = () => {
+
   return (
     <section id="landing">
       <motion.div
-        // ref={ref}
-        // variants={boxVariant}
-        // initial="hidden"
-        // animate={control}
+        layoutScroll
+        initial="hidden"
+        animate={{ transform: "translateX(100px)", }}
+        layout transition={{ duration: 0.5 }}
       >
         <Card>
             <Card.Title variant="h2" align="center" margin={3}>
