@@ -17,7 +17,6 @@ const Home = () => {
       </section>
 
       <section id="about">
-        <div>{<About />}</div>
       </section>
     </BrowserRouter>
   );
