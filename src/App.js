@@ -1,14 +1,13 @@
-import logo from './logo.svg';
+import React from "react";
+import Home from "./Home";
+import About from "./About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Natalie Ricci
-        </p>
-      </header>
-    </div>
+    <>
+        <Home />
+        <About />
+    </>
   );
 }
 
