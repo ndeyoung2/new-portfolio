@@ -7,12 +7,15 @@ module.exports = {
     path: path.resolve(__dirname + '/public'),
     filename: 'bundle.js',
   },
+  context: __dirname,
+  devtool: "source-map",
+  devServer: {
+    static: {
+      directory: __dirname + "/public",
+    },
+  },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
