@@ -1,18 +1,40 @@
-import React, {useState} from "react";
-import { motion, useAnimation, useScroll } from "framer-motion";
+import React, {useRef} from "react";
+import { motion, useInView} from "framer-motion";
 import { Card } from "react-bootstrap";
 
+function Section({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <section ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
 
 const Landing = () => {
+
+  const container = useRef(null)
+  const ref = useRef(null)
+  const isInView = useInView(ref)
 
   return (
     <section id="landing">
       <motion.div
-        layoutScroll
-        initial="hidden"
-        animate={{ transform: "translateX(100px)", }}
-        layout transition={{ duration: 0.5 }}
+      ref={container}
+      transition={"spring"}
+      animate={{ scale: 1.2 }}
       >
+      ref={ref}
         <Card>
             <Card.Title variant="h2" align="center" margin={3}>
               Natalie DeYoung Ricci
@@ -22,6 +44,7 @@ const Landing = () => {
             </Card.Title>
           {/* </Grid> */}
         </Card>
+
       </motion.div>
     </section>
   );

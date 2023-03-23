@@ -1,8 +1,7 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Landing from "./Landing";
-import About from "./About";
 
 const Home = () => {
   return (
