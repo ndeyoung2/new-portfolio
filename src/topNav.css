@@ -1,0 +1,22 @@
+.navb {
+  /* position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 25px 0 0;
+  text-align: right; */
+  color: #58592E;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 25px;
+  float: right;
+}
+
+a:hover {
+  color: #7a577a;
+}
