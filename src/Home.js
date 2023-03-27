@@ -13,6 +13,7 @@ const Home = () => {
       <nav>
         <HashLink smooth to="/#home"></HashLink>
         <HashLink smooth to="/#about"></HashLink>
+        <HashLink smooth to="/#contact"></HashLink>
       </nav>
 
       <section id="home">
@@ -20,6 +21,9 @@ const Home = () => {
       </section>
 
       <section id="about">
+      </section>
+
+      <section id="contact">
       </section>
     </BrowserRouter>
   );

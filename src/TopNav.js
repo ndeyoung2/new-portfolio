@@ -12,10 +12,10 @@ const TopNav = () => {
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav.Item> */}
           <Nav.Item as="ul">
-            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item as="ul">
-            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
           </Nav.Item>
         </Navbar>
       </Nav>
