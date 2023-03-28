@@ -1,12 +1,10 @@
-.navb {
-  /* position: fixed;
-  top: 0;
-  bottom: 0;
+.topnav {
+  position: fixed;
   right: 25px;
-  min-height: 100vh !important;
+  /* sx={{ backdropFilter: "blur(20px)" }}
+  style={{ backgroundColor: "transparent", boxShadow: "none" }}  */
   z-index: 100;
-  padding: 25px 0 0;
-  text-align: right; */
+  text-align: right;
   color: #58592E;
 }
 
