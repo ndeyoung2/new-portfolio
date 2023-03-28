@@ -7068,6 +7068,37 @@ var Contact = function Contact() {
 
 /***/ }),
 
+/***/ "./src/Footer.js":
+/*!***********************!*\
+  !*** ./src/Footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/ModalFooter.js");
+
+
+var Footer = function Footer() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    id: "footer",
+    align: "center",
+    style: {
+      position: "fixed",
+      bottom: 0
+    },
+    margin: 1
+  }, "\xA9 2023 Natalie DeYoung Ricci"));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
 /***/ "./src/Home.js":
 /*!*********************!*\
   !*** ./src/Home.js ***!
@@ -7081,12 +7112,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/dist/react-router-hash-link.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/dist/react-router-hash-link.esm.js");
 /* harmony import */ var _Landing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Landing */ "./src/Landing.js");
 /* harmony import */ var _TopNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TopNav */ "./src/TopNav.js");
 /* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./About */ "./src/About.js");
-/* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Contact */ "./src/Contact.js");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/Footer.js");
+/* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Contact */ "./src/Contact.js");
+
 
 
 
@@ -7095,15 +7128,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "navbar"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_TopNav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_TopNav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_7__.HashLink, {
     smooth: true,
     to: "/"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_7__.HashLink, {
     smooth: true,
     to: "/#about"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_7__.HashLink, {
     smooth: true,
     to: "/#contact"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
@@ -7112,7 +7145,9 @@ var Home = function Home() {
     id: "about"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_About__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "contact"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Contact__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Contact__WEBPACK_IMPORTED_MODULE_5__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
@@ -7131,33 +7166,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/utils/use-in-view.mjs");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 var Landing = function Landing() {
-  //   const [scope, animate] = useAnimate();
-
-  //   const ref = useRef(null)
-  //   const isInView = useInView(ref)
-
-  //   useEffect(() => {
-  //     if (isInView) {
-  //       animate(scope.current, { opacity: 1 });
-  //     }
-  //  }, [isInView]);
-
+  var _useAnimate = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useAnimate)(),
+    _useAnimate2 = _slicedToArray(_useAnimate, 2),
+    scope = _useAnimate2[0],
+    animate = _useAnimate2[1];
+  var ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var isInView = (0,framer_motion__WEBPACK_IMPORTED_MODULE_2__.useInView)(ref);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (isInView) {
+      animate(scope.current, {
+        opacity: 1
+      });
+    }
+  }, [isInView]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "landing"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["default"].Title, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    ref: scope,
+    transition: "spring",
+    animate: {
+      scale: 1.2
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
     variant: "h2",
     align: "center",
     margin: 3
-  }, "Natalie DeYoung Ricci"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["default"].Title, {
+  }, "Natalie DeYoung Ricci"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
     variant: "h5",
     align: "center",
     margin: 3
-  }, "Full Stack Software Engineer")));
+  }, "Full Stack Software Engineer"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Landing);
 
@@ -10984,6 +11036,23 @@ const ModalContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createConte
   onHide() {}
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ModalContext);
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/esm/ModalFooter.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/ModalFooter.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _createWithBsPrefix__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createWithBsPrefix */ "./node_modules/react-bootstrap/esm/createWithBsPrefix.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_0__["default"])('modal-footer'));
 
 /***/ }),
 
@@ -51872,6 +51941,181 @@ function _setPrototypeOf(o, p) {
 
 /***/ }),
 
+/***/ "./node_modules/framer-motion/dist/es/animation/GroupPlaybackControls.mjs":
+/*!********************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/GroupPlaybackControls.mjs ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GroupPlaybackControls": () => (/* binding */ GroupPlaybackControls)
+/* harmony export */ });
+class GroupPlaybackControls {
+    constructor(animations) {
+        this.animations = animations.filter(Boolean);
+    }
+    then(onResolve, onReject) {
+        return Promise.all(this.animations).then(onResolve).catch(onReject);
+    }
+    /**
+     * TODO: Filter out cancelled or stopped animations before returning
+     */
+    getAll(propName) {
+        return this.animations[0][propName];
+    }
+    setAll(propName, newValue) {
+        for (let i = 0; i < this.animations.length; i++) {
+            this.animations[i][propName] = newValue;
+        }
+    }
+    get time() {
+        return this.getAll("time");
+    }
+    set time(time) {
+        this.setAll("time", time);
+    }
+    get speed() {
+        return this.getAll("speed");
+    }
+    set speed(speed) {
+        this.setAll("speed", speed);
+    }
+    runAll(methodName) {
+        this.animations.forEach((controls) => controls[methodName]());
+    }
+    play() {
+        this.runAll("play");
+    }
+    pause() {
+        this.runAll("pause");
+    }
+    stop() {
+        this.runAll("stop");
+    }
+    cancel() {
+        this.runAll("cancel");
+    }
+    complete() {
+        this.runAll("complete");
+    }
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/animation/animate.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/animate.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "animate": () => (/* binding */ animate),
+/* harmony export */   "createScopedAnimate": () => (/* binding */ createScopedAnimate)
+/* harmony export */ });
+/* harmony import */ var _render_dom_utils_resolve_element_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../render/dom/utils/resolve-element.mjs */ "./node_modules/framer-motion/dist/es/render/dom/utils/resolve-element.mjs");
+/* harmony import */ var _render_store_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../render/store.mjs */ "./node_modules/framer-motion/dist/es/render/store.mjs");
+/* harmony import */ var _utils_errors_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/errors.mjs */ "./node_modules/framer-motion/dist/es/utils/errors.mjs");
+/* harmony import */ var _GroupPlaybackControls_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GroupPlaybackControls.mjs */ "./node_modules/framer-motion/dist/es/animation/GroupPlaybackControls.mjs");
+/* harmony import */ var _utils_is_dom_keyframes_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./utils/is-dom-keyframes.mjs */ "./node_modules/framer-motion/dist/es/animation/utils/is-dom-keyframes.mjs");
+/* harmony import */ var _interfaces_visual_element_target_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./interfaces/visual-element-target.mjs */ "./node_modules/framer-motion/dist/es/animation/interfaces/visual-element-target.mjs");
+/* harmony import */ var _utils_create_visual_element_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/create-visual-element.mjs */ "./node_modules/framer-motion/dist/es/animation/utils/create-visual-element.mjs");
+/* harmony import */ var _interfaces_single_value_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./interfaces/single-value.mjs */ "./node_modules/framer-motion/dist/es/animation/interfaces/single-value.mjs");
+/* harmony import */ var _sequence_create_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sequence/create.mjs */ "./node_modules/framer-motion/dist/es/animation/sequence/create.mjs");
+/* harmony import */ var _value_utils_is_motion_value_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../value/utils/is-motion-value.mjs */ "./node_modules/framer-motion/dist/es/value/utils/is-motion-value.mjs");
+
+
+
+
+
+
+
+
+
+
+
+function animateElements(elementOrSelector, keyframes, options, scope) {
+    const elements = (0,_render_dom_utils_resolve_element_mjs__WEBPACK_IMPORTED_MODULE_0__.resolveElements)(elementOrSelector, scope);
+    const numElements = elements.length;
+    (0,_utils_errors_mjs__WEBPACK_IMPORTED_MODULE_1__.invariant)(Boolean(numElements), "No valid element provided.");
+    const animations = [];
+    for (let i = 0; i < numElements; i++) {
+        const element = elements[i];
+        /**
+         * Check each element for an associated VisualElement. If none exists,
+         * we need to create one.
+         */
+        if (!_render_store_mjs__WEBPACK_IMPORTED_MODULE_2__.visualElementStore.has(element)) {
+            /**
+             * TODO: We only need render-specific parts of the VisualElement.
+             * With some additional work the size of the animate() function
+             * could be reduced significantly.
+             */
+            (0,_utils_create_visual_element_mjs__WEBPACK_IMPORTED_MODULE_3__.createVisualElement)(element);
+        }
+        const visualElement = _render_store_mjs__WEBPACK_IMPORTED_MODULE_2__.visualElementStore.get(element);
+        const transition = { ...options };
+        /**
+         * Resolve stagger function if provided.
+         */
+        if (typeof transition.delay === "function") {
+            transition.delay = transition.delay(i, numElements);
+        }
+        animations.push(...(0,_interfaces_visual_element_target_mjs__WEBPACK_IMPORTED_MODULE_4__.animateTarget)(visualElement, { ...keyframes, transition }, {}));
+    }
+    return new _GroupPlaybackControls_mjs__WEBPACK_IMPORTED_MODULE_5__.GroupPlaybackControls(animations);
+}
+const isSequence = (value) => Array.isArray(value) && Array.isArray(value[0]);
+function animateSequence(sequence, options) {
+    const animations = [];
+    const animationDefinitions = (0,_sequence_create_mjs__WEBPACK_IMPORTED_MODULE_6__.createAnimationsFromSequence)(sequence, options);
+    animationDefinitions.forEach(({ keyframes, transition }, subject) => {
+        let animation;
+        if ((0,_value_utils_is_motion_value_mjs__WEBPACK_IMPORTED_MODULE_7__.isMotionValue)(subject)) {
+            animation = (0,_interfaces_single_value_mjs__WEBPACK_IMPORTED_MODULE_8__.animateSingleValue)(subject, keyframes.default, transition.default);
+        }
+        else {
+            animation = animateElements(subject, keyframes, transition);
+        }
+        animations.push(animation);
+    });
+    return new _GroupPlaybackControls_mjs__WEBPACK_IMPORTED_MODULE_5__.GroupPlaybackControls(animations);
+}
+const createScopedAnimate = (scope) => {
+    /**
+     * Implementation
+     */
+    function scopedAnimate(valueOrElementOrSequence, keyframes, options) {
+        let animation;
+        if (isSequence(valueOrElementOrSequence)) {
+            animation = animateSequence(valueOrElementOrSequence, keyframes);
+        }
+        else if ((0,_utils_is_dom_keyframes_mjs__WEBPACK_IMPORTED_MODULE_9__.isDOMKeyframes)(keyframes)) {
+            animation = animateElements(valueOrElementOrSequence, keyframes, options, scope);
+        }
+        else {
+            animation = (0,_interfaces_single_value_mjs__WEBPACK_IMPORTED_MODULE_8__.animateSingleValue)(valueOrElementOrSequence, keyframes, options);
+        }
+        if (scope) {
+            scope.animations.push(animation);
+        }
+        return animation;
+    }
+    return scopedAnimate;
+};
+const animate = createScopedAnimate();
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/framer-motion/dist/es/animation/animators/instant.mjs":
 /*!****************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/animation/animators/instant.mjs ***!
@@ -53141,6 +53385,41 @@ function animationControls() {
 
 /***/ }),
 
+/***/ "./node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs":
+/*!****************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useAnimate": () => (/* binding */ useAnimate)
+/* harmony export */ });
+/* harmony import */ var _utils_use_constant_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/use-constant.mjs */ "./node_modules/framer-motion/dist/es/utils/use-constant.mjs");
+/* harmony import */ var _utils_use_unmount_effect_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/use-unmount-effect.mjs */ "./node_modules/framer-motion/dist/es/utils/use-unmount-effect.mjs");
+/* harmony import */ var _animate_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../animate.mjs */ "./node_modules/framer-motion/dist/es/animation/animate.mjs");
+
+
+
+
+function useAnimate() {
+    const scope = (0,_utils_use_constant_mjs__WEBPACK_IMPORTED_MODULE_0__.useConstant)(() => ({
+        current: null,
+        animations: [],
+    }));
+    const animate = (0,_utils_use_constant_mjs__WEBPACK_IMPORTED_MODULE_0__.useConstant)(() => (0,_animate_mjs__WEBPACK_IMPORTED_MODULE_1__.createScopedAnimate)(scope));
+    (0,_utils_use_unmount_effect_mjs__WEBPACK_IMPORTED_MODULE_2__.useUnmountEffect)(() => {
+        scope.animations.forEach((animation) => animation.stop());
+    });
+    return [scope, animate];
+}
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs":
 /*!******************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs ***!
@@ -53589,6 +53868,384 @@ const optimizedAppearDataAttribute = "data-" + (0,_render_dom_utils_camel_to_das
 
 /***/ }),
 
+/***/ "./node_modules/framer-motion/dist/es/animation/sequence/create.mjs":
+/*!**************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/sequence/create.mjs ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createAnimationsFromSequence": () => (/* binding */ createAnimationsFromSequence),
+/* harmony export */   "getValueTransition": () => (/* binding */ getValueTransition)
+/* harmony export */ });
+/* harmony import */ var _render_dom_utils_resolve_element_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../render/dom/utils/resolve-element.mjs */ "./node_modules/framer-motion/dist/es/render/dom/utils/resolve-element.mjs");
+/* harmony import */ var _utils_offsets_default_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/offsets/default.mjs */ "./node_modules/framer-motion/dist/es/utils/offsets/default.mjs");
+/* harmony import */ var _utils_offsets_fill_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/offsets/fill.mjs */ "./node_modules/framer-motion/dist/es/utils/offsets/fill.mjs");
+/* harmony import */ var _utils_progress_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../utils/progress.mjs */ "./node_modules/framer-motion/dist/es/utils/progress.mjs");
+/* harmony import */ var _value_utils_is_motion_value_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../value/utils/is-motion-value.mjs */ "./node_modules/framer-motion/dist/es/value/utils/is-motion-value.mjs");
+/* harmony import */ var _utils_calc_time_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/calc-time.mjs */ "./node_modules/framer-motion/dist/es/animation/sequence/utils/calc-time.mjs");
+/* harmony import */ var _utils_edit_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/edit.mjs */ "./node_modules/framer-motion/dist/es/animation/sequence/utils/edit.mjs");
+/* harmony import */ var _utils_sort_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/sort.mjs */ "./node_modules/framer-motion/dist/es/animation/sequence/utils/sort.mjs");
+
+
+
+
+
+
+
+
+
+function createAnimationsFromSequence(sequence, { defaultTransition = {}, ...sequenceTransition } = {}, scope) {
+    const animationDefinitions = new Map();
+    const sequences = new Map();
+    const elementCache = {};
+    const timeLabels = new Map();
+    let prevTime = 0;
+    let currentTime = 0;
+    let totalDuration = 0;
+    /**
+     * Build the timeline by mapping over the sequence array and converting
+     * the definitions into keyframes and offsets with absolute time values.
+     * These will later get converted into relative offsets in a second pass.
+     */
+    for (let i = 0; i < sequence.length; i++) {
+        const segment = sequence[i];
+        /**
+         * If this is a timeline label, mark it and skip the rest of this iteration.
+         */
+        if (typeof segment === "string") {
+            timeLabels.set(segment, currentTime);
+            continue;
+        }
+        else if (!Array.isArray(segment)) {
+            timeLabels.set(segment.name, (0,_utils_calc_time_mjs__WEBPACK_IMPORTED_MODULE_0__.calcNextTime)(currentTime, segment.at, prevTime, timeLabels));
+            continue;
+        }
+        let [subject, keyframes, transition = {}] = segment;
+        /**
+         * If a relative or absolute time value has been specified we need to resolve
+         * it in relation to the currentTime.
+         */
+        if (transition.at !== undefined) {
+            currentTime = (0,_utils_calc_time_mjs__WEBPACK_IMPORTED_MODULE_0__.calcNextTime)(currentTime, transition.at, prevTime, timeLabels);
+        }
+        /**
+         * Keep track of the maximum duration in this definition. This will be
+         * applied to currentTime once the definition has been parsed.
+         */
+        let maxDuration = 0;
+        const resolveValueSequence = (valueKeyframes, valueTransition, valueSequence, elementIndex = 0, numElements = 0) => {
+            const valueKeyframesAsList = keyframesAsList(valueKeyframes);
+            const { duration = defaultTransition.duration || 0.3, ease = defaultTransition.ease || "easeOut", } = valueTransition;
+            const delay = typeof valueTransition.delay === "function"
+                ? valueTransition.delay(elementIndex, numElements)
+                : valueTransition.delay || 0;
+            const startTime = currentTime + delay;
+            const targetTime = startTime + duration;
+            const { times = (0,_utils_offsets_default_mjs__WEBPACK_IMPORTED_MODULE_1__.defaultOffset)(valueKeyframesAsList) } = valueTransition;
+            /**
+             * If there's only one time offset of 0, fill in a second with length 1
+             */
+            if (times.length === 1 && times[0] === 0) {
+                times[1] = 1;
+            }
+            /**
+             * Fill out if offset if fewer offsets than keyframes
+             */
+            const remainder = times.length - valueKeyframesAsList.length;
+            remainder > 0 && (0,_utils_offsets_fill_mjs__WEBPACK_IMPORTED_MODULE_2__.fillOffset)(times, remainder);
+            /**
+             * If only one value has been set, ie [1], push a null to the start of
+             * the keyframe array. This will let us mark a keyframe at this point
+             * that will later be hydrated with the previous value.
+             */
+            valueKeyframesAsList.length === 1 &&
+                valueKeyframesAsList.unshift(null);
+            /**
+             * Add keyframes, mapping offsets to absolute time.
+             */
+            (0,_utils_edit_mjs__WEBPACK_IMPORTED_MODULE_3__.addKeyframes)(valueSequence, valueKeyframesAsList, ease, times, startTime, targetTime);
+            maxDuration = Math.max(delay + duration, maxDuration);
+            totalDuration = Math.max(targetTime, totalDuration);
+        };
+        if ((0,_value_utils_is_motion_value_mjs__WEBPACK_IMPORTED_MODULE_4__.isMotionValue)(subject)) {
+            const subjectSequence = getSubjectSequence(subject, sequences);
+            resolveValueSequence(keyframes, transition, getValueSequence("default", subjectSequence));
+        }
+        else {
+            /**
+             * Find all the elements specified in the definition and parse value
+             * keyframes from their timeline definitions.
+             */
+            const elements = (0,_render_dom_utils_resolve_element_mjs__WEBPACK_IMPORTED_MODULE_5__.resolveElements)(subject, scope, elementCache);
+            const numElements = elements.length;
+            /**
+             * For every element in this segment, process the defined values.
+             */
+            for (let elementIndex = 0; elementIndex < numElements; elementIndex++) {
+                /**
+                 * Cast necessary, but we know these are of this type
+                 */
+                keyframes = keyframes;
+                transition = transition;
+                const element = elements[elementIndex];
+                const subjectSequence = getSubjectSequence(element, sequences);
+                for (const key in keyframes) {
+                    resolveValueSequence(keyframes[key], getValueTransition(transition, key), getValueSequence(key, subjectSequence), elementIndex, numElements);
+                }
+            }
+            prevTime = currentTime;
+            currentTime += maxDuration;
+        }
+    }
+    /**
+     * For every element and value combination create a new animation.
+     */
+    sequences.forEach((valueSequences, element) => {
+        for (const key in valueSequences) {
+            const valueSequence = valueSequences[key];
+            /**
+             * Arrange all the keyframes in ascending time order.
+             */
+            valueSequence.sort(_utils_sort_mjs__WEBPACK_IMPORTED_MODULE_6__.compareByTime);
+            const keyframes = [];
+            const valueOffset = [];
+            const valueEasing = [];
+            /**
+             * For each keyframe, translate absolute times into
+             * relative offsets based on the total duration of the timeline.
+             */
+            for (let i = 0; i < valueSequence.length; i++) {
+                const { at, value, easing } = valueSequence[i];
+                keyframes.push(value);
+                valueOffset.push((0,_utils_progress_mjs__WEBPACK_IMPORTED_MODULE_7__.progress)(0, totalDuration, at));
+                valueEasing.push(easing || "easeOut");
+            }
+            /**
+             * If the first keyframe doesn't land on offset: 0
+             * provide one by duplicating the initial keyframe. This ensures
+             * it snaps to the first keyframe when the animation starts.
+             */
+            if (valueOffset[0] !== 0) {
+                valueOffset.unshift(0);
+                keyframes.unshift(keyframes[0]);
+                valueEasing.unshift("linear");
+            }
+            /**
+             * If the last keyframe doesn't land on offset: 1
+             * provide one with a null wildcard value. This will ensure it
+             * stays static until the end of the animation.
+             */
+            if (valueOffset[valueOffset.length - 1] !== 1) {
+                valueOffset.push(1);
+                keyframes.push(null);
+            }
+            if (!animationDefinitions.has(element)) {
+                animationDefinitions.set(element, {
+                    keyframes: {},
+                    transition: {},
+                });
+            }
+            const definition = animationDefinitions.get(element);
+            definition.keyframes[key] = keyframes;
+            definition.transition[key] = {
+                ...defaultTransition,
+                duration: totalDuration,
+                ease: valueEasing,
+                times: valueOffset,
+                ...sequenceTransition,
+            };
+        }
+    });
+    return animationDefinitions;
+}
+function getSubjectSequence(subject, sequences) {
+    !sequences.has(subject) && sequences.set(subject, {});
+    return sequences.get(subject);
+}
+function getValueSequence(name, sequences) {
+    if (!sequences[name])
+        sequences[name] = [];
+    return sequences[name];
+}
+function keyframesAsList(keyframes) {
+    return Array.isArray(keyframes) ? keyframes : [keyframes];
+}
+function getValueTransition(transition, key) {
+    return transition[key]
+        ? { ...transition, ...transition[key] }
+        : { ...transition };
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/animation/sequence/utils/calc-time.mjs":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/sequence/utils/calc-time.mjs ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "calcNextTime": () => (/* binding */ calcNextTime)
+/* harmony export */ });
+/**
+ * Given a absolute or relative time definition and current/prev time state of the sequence,
+ * calculate an absolute time for the next keyframes.
+ */
+function calcNextTime(current, next, prev, labels) {
+    var _a;
+    if (typeof next === "number") {
+        return next;
+    }
+    else if (next.startsWith("-") || next.startsWith("+")) {
+        return Math.max(0, current + parseFloat(next));
+    }
+    else if (next === "<") {
+        return prev;
+    }
+    else {
+        return (_a = labels.get(next)) !== null && _a !== void 0 ? _a : current;
+    }
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/animation/sequence/utils/edit.mjs":
+/*!******************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/sequence/utils/edit.mjs ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "addKeyframes": () => (/* binding */ addKeyframes),
+/* harmony export */   "eraseKeyframes": () => (/* binding */ eraseKeyframes)
+/* harmony export */ });
+/* harmony import */ var _easing_utils_get_easing_for_segment_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../easing/utils/get-easing-for-segment.mjs */ "./node_modules/framer-motion/dist/es/easing/utils/get-easing-for-segment.mjs");
+/* harmony import */ var _utils_array_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../utils/array.mjs */ "./node_modules/framer-motion/dist/es/utils/array.mjs");
+/* harmony import */ var _utils_mix_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../utils/mix.mjs */ "./node_modules/framer-motion/dist/es/utils/mix.mjs");
+
+
+
+
+function eraseKeyframes(sequence, startTime, endTime) {
+    for (let i = 0; i < sequence.length; i++) {
+        const keyframe = sequence[i];
+        if (keyframe.at > startTime && keyframe.at < endTime) {
+            (0,_utils_array_mjs__WEBPACK_IMPORTED_MODULE_0__.removeItem)(sequence, keyframe);
+            // If we remove this item we have to push the pointer back one
+            i--;
+        }
+    }
+}
+function addKeyframes(sequence, keyframes, easing, offset, startTime, endTime) {
+    /**
+     * Erase every existing value between currentTime and targetTime,
+     * this will essentially splice this timeline into any currently
+     * defined ones.
+     */
+    eraseKeyframes(sequence, startTime, endTime);
+    for (let i = 0; i < keyframes.length; i++) {
+        sequence.push({
+            value: keyframes[i],
+            at: (0,_utils_mix_mjs__WEBPACK_IMPORTED_MODULE_1__.mix)(startTime, endTime, offset[i]),
+            easing: (0,_easing_utils_get_easing_for_segment_mjs__WEBPACK_IMPORTED_MODULE_2__.getEasingForSegment)(easing, i),
+        });
+    }
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/animation/sequence/utils/sort.mjs":
+/*!******************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/sequence/utils/sort.mjs ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "compareByTime": () => (/* binding */ compareByTime)
+/* harmony export */ });
+function compareByTime(a, b) {
+    if (a.at === b.at) {
+        return a.value === null ? 0 : -1;
+    }
+    else {
+        return a.at - b.at;
+    }
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/animation/utils/create-visual-element.mjs":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/utils/create-visual-element.mjs ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createVisualElement": () => (/* binding */ createVisualElement)
+/* harmony export */ });
+/* harmony import */ var _render_dom_utils_is_svg_element_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../render/dom/utils/is-svg-element.mjs */ "./node_modules/framer-motion/dist/es/render/dom/utils/is-svg-element.mjs");
+/* harmony import */ var _render_svg_SVGVisualElement_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../render/svg/SVGVisualElement.mjs */ "./node_modules/framer-motion/dist/es/render/svg/SVGVisualElement.mjs");
+/* harmony import */ var _render_html_HTMLVisualElement_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../render/html/HTMLVisualElement.mjs */ "./node_modules/framer-motion/dist/es/render/html/HTMLVisualElement.mjs");
+/* harmony import */ var _render_store_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../render/store.mjs */ "./node_modules/framer-motion/dist/es/render/store.mjs");
+
+
+
+
+
+function createVisualElement(element) {
+    const options = {
+        presenceContext: null,
+        props: {},
+        visualState: {
+            renderState: {
+                transform: {},
+                transformOrigin: {},
+                style: {},
+                vars: {},
+                attrs: {},
+            },
+            latestValues: {},
+        },
+    };
+    const node = (0,_render_dom_utils_is_svg_element_mjs__WEBPACK_IMPORTED_MODULE_0__.isSVGElement)(element)
+        ? new _render_svg_SVGVisualElement_mjs__WEBPACK_IMPORTED_MODULE_1__.SVGVisualElement(options, {
+            enableHardwareAcceleration: false,
+        })
+        : new _render_html_HTMLVisualElement_mjs__WEBPACK_IMPORTED_MODULE_2__.HTMLVisualElement(options, {
+            enableHardwareAcceleration: true,
+        });
+    node.mount(element);
+    _render_store_mjs__WEBPACK_IMPORTED_MODULE_3__.visualElementStore.set(element, node);
+}
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/framer-motion/dist/es/animation/utils/default-transitions.mjs":
 /*!************************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/animation/utils/default-transitions.mjs ***!
@@ -53704,6 +54361,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function isAnimationControls(v) {
     return typeof v === "object" && typeof v.start === "function";
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/animation/utils/is-dom-keyframes.mjs":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/utils/is-dom-keyframes.mjs ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "isDOMKeyframes": () => (/* binding */ isDOMKeyframes)
+/* harmony export */ });
+function isDOMKeyframes(keyframes) {
+    return typeof keyframes === "object" && !Array.isArray(keyframes);
 }
 
 
@@ -54350,6 +55027,31 @@ __webpack_require__.r(__webpack_exports__);
 // Accepts an easing function and returns a new one that outputs reversed values.
 // Turns easeIn into easeOut.
 const reverseEasing = (easing) => (p) => 1 - easing(1 - p);
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/easing/utils/get-easing-for-segment.mjs":
+/*!************************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/easing/utils/get-easing-for-segment.mjs ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getEasingForSegment": () => (/* binding */ getEasingForSegment)
+/* harmony export */ });
+/* harmony import */ var _utils_wrap_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/wrap.mjs */ "./node_modules/framer-motion/dist/es/utils/wrap.mjs");
+/* harmony import */ var _is_easing_array_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is-easing-array.mjs */ "./node_modules/framer-motion/dist/es/easing/utils/is-easing-array.mjs");
+
+
+
+function getEasingForSegment(easing, i) {
+    return (0,_is_easing_array_mjs__WEBPACK_IMPORTED_MODULE_0__.isEasingArray)(easing) ? easing[(0,_utils_wrap_mjs__WEBPACK_IMPORTED_MODULE_1__.wrap)(0, easing.length, i)] : easing;
+}
 
 
 
@@ -60984,6 +61686,50 @@ const parseDomVariant = (visualElement, target, origin, transitionEnd) => {
 
 /***/ }),
 
+/***/ "./node_modules/framer-motion/dist/es/render/dom/utils/resolve-element.mjs":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/render/dom/utils/resolve-element.mjs ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "resolveElements": () => (/* binding */ resolveElements)
+/* harmony export */ });
+/* harmony import */ var _utils_errors_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../utils/errors.mjs */ "./node_modules/framer-motion/dist/es/utils/errors.mjs");
+
+
+function resolveElements(elements, scope, selectorCache) {
+    var _a;
+    if (typeof elements === "string") {
+        let root = document;
+        if (scope) {
+            (0,_utils_errors_mjs__WEBPACK_IMPORTED_MODULE_0__.invariant)(Boolean(scope.current), "Scope provided, but no element detected.");
+            root = scope.current;
+        }
+        if (selectorCache) {
+            (_a = selectorCache[elements]) !== null && _a !== void 0 ? _a : (selectorCache[elements] = root.querySelectorAll(elements));
+            elements = selectorCache[elements];
+        }
+        else {
+            elements = root.querySelectorAll(elements);
+        }
+    }
+    else if (elements instanceof Element) {
+        elements = [elements];
+    }
+    /**
+     * Return an empty array
+     */
+    return Array.from(elements || []);
+}
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/framer-motion/dist/es/render/dom/utils/unit-conversion.mjs":
 /*!*********************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/render/dom/utils/unit-conversion.mjs ***!
@@ -61555,6 +62301,65 @@ const int = {
     ..._value_types_numbers_index_mjs__WEBPACK_IMPORTED_MODULE_0__.number,
     transform: Math.round,
 };
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/render/dom/viewport/index.mjs":
+/*!**************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/render/dom/viewport/index.mjs ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "inView": () => (/* binding */ inView)
+/* harmony export */ });
+/* harmony import */ var _utils_resolve_element_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/resolve-element.mjs */ "./node_modules/framer-motion/dist/es/render/dom/utils/resolve-element.mjs");
+
+
+const thresholds = {
+    any: 0,
+    all: 1,
+};
+function inView(elementOrSelector, onStart, { root, margin: rootMargin, amount = "any" } = {}) {
+    const elements = (0,_utils_resolve_element_mjs__WEBPACK_IMPORTED_MODULE_0__.resolveElements)(elementOrSelector);
+    const activeIntersections = new WeakMap();
+    const onIntersectionChange = (entries) => {
+        entries.forEach((entry) => {
+            const onEnd = activeIntersections.get(entry.target);
+            /**
+             * If there's no change to the intersection, we don't need to
+             * do anything here.
+             */
+            if (entry.isIntersecting === Boolean(onEnd))
+                return;
+            if (entry.isIntersecting) {
+                const newOnEnd = onStart(entry);
+                if (typeof newOnEnd === "function") {
+                    activeIntersections.set(entry.target, newOnEnd);
+                }
+                else {
+                    observer.unobserve(entry.target);
+                }
+            }
+            else if (onEnd) {
+                onEnd(entry);
+                activeIntersections.delete(entry.target);
+            }
+        });
+    };
+    const observer = new IntersectionObserver(onIntersectionChange, {
+        root,
+        rootMargin,
+        threshold: typeof amount === "number" ? amount : thresholds[amount],
+    });
+    elements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+}
 
 
 
@@ -64338,6 +65143,46 @@ function useConstant(init) {
 
 /***/ }),
 
+/***/ "./node_modules/framer-motion/dist/es/utils/use-in-view.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/utils/use-in-view.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useInView": () => (/* binding */ useInView)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _render_dom_viewport_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../render/dom/viewport/index.mjs */ "./node_modules/framer-motion/dist/es/render/dom/viewport/index.mjs");
+
+
+
+function useInView(ref, { root, margin, amount, once = false } = {}) {
+    const [isInView, setInView] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (!ref.current || (once && isInView))
+            return;
+        const onEnter = () => {
+            setInView(true);
+            return once ? undefined : () => setInView(false);
+        };
+        const options = {
+            root: (root && root.current) || undefined,
+            margin,
+            amount: amount === "some" ? "any" : amount,
+        };
+        return (0,_render_dom_viewport_index_mjs__WEBPACK_IMPORTED_MODULE_1__.inView)(ref.current, onEnter, options);
+    }, [root, ref, margin, once]);
+    return isInView;
+}
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/framer-motion/dist/es/utils/use-instant-transition-state.mjs":
 /*!***********************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/utils/use-instant-transition-state.mjs ***!
@@ -64375,6 +65220,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const useIsomorphicLayoutEffect = _is_browser_mjs__WEBPACK_IMPORTED_MODULE_1__.isBrowser ? react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0__.useEffect;
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/utils/use-unmount-effect.mjs":
+/*!*************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/utils/use-unmount-effect.mjs ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useUnmountEffect": () => (/* binding */ useUnmountEffect)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function useUnmountEffect(callback) {
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => () => callback(), []);
+}
 
 
 
@@ -64427,6 +65295,27 @@ function warnOnce(condition, message, element) {
         console.warn(element);
     warned.add(message);
 }
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/utils/wrap.mjs":
+/*!***********************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/utils/wrap.mjs ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "wrap": () => (/* binding */ wrap)
+/* harmony export */ });
+const wrap = (min, max, v) => {
+    const rangeSize = max - min;
+    return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
+};
 
 
 

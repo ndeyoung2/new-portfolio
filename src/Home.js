@@ -4,6 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import Landing from "./Landing";
 import TopNav from "./TopNav";
 import About from "./About";
+import Footer from "./Footer"
 import Contact from "./Contact";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <HashLink smooth to="/"></HashLink>
         <HashLink smooth to="/#about"></HashLink>
         <HashLink smooth to="/#contact"></HashLink>
+
       </nav>
 
       <section id="home">
@@ -28,6 +30,10 @@ const Home = () => {
 
       <section id="contact">
       {<Contact/>}
+      </section>
+
+      <section id="footer">
+      {<Footer/>}
       </section>
     </BrowserRouter>
   );
