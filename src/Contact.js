@@ -1,15 +1,15 @@
-import React, { useState, useRef } from "react";
-import { motion, useAnimate, useScroll } from "framer-motion";
+import React, { TextareaHTMLAttributes, useState, useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { Container, Form, Modal, Card, Col, Row, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
+
 const Contact = () => {
-  // const { scrollYProgress } = useScroll();
-  // const { register, handleSubmit } = useForm();
-  const control = useAnimate
+  const { scrollYProgress } = useScroll();
+  const { register, handleSubmit } = useForm();
   const formRef = useRef();
-  // const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -27,8 +27,6 @@ const Contact = () => {
       [name]: value,
     });
   };
-
-
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -50,6 +48,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
+          setShow(false);
           alert(
             "Thank you for reaching out! I will reply as soon as possible."
           );
@@ -62,7 +61,6 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          // setShow(false);
           console.error(error);
 
           alert("Oops, something went wrong. Please try again.");
@@ -73,28 +71,25 @@ const Contact = () => {
   return (
     <section id="contact">
       <motion.div
-          // style={{ scaleX: scrollYProgress }}
-          // initial="hidden"
+          style={{ scaleX: scrollYProgress }}
+          initial="hidden"
         >
     <Card>
-      <Modal
-      // show={show}
+      <Card
       className="modal"
       size='lg'
-      animate={control}
-      onSubmit={onSubmit}>
-        <Modal.Header>
-        <Modal.Title>Contact Me</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="show-grid">
+      show='show'
+      onSubmit={handleSubmit}>
+        <Card.Header>
+        <Card.Title>Contact Me</Card.Title>
+        </Card.Header>
+        <Card.Body className="show-grid">
           <Container>
-          <Form
-            ref={formRef}>
+          <Form>
             <Form.Group>
               <Row>
                 <Form.Label column sm="2">Your Name</Form.Label>
                   <Form.Control
-                    ref={formRef}
                     name="name"
                     id="name"
                     type="text"
@@ -141,8 +136,8 @@ const Contact = () => {
             </Form.Group>
           </Form>
           </Container>
-        </Modal.Body>
-      </Modal>
+        </Card.Body>
+      </Card>
     </Card>
     </motion.div>
     </section>
