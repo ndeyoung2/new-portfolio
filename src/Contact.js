@@ -1,14 +1,12 @@
-import React, { TextareaHTMLAttributes, useState, useRef } from "react";
-import { motion, useScroll, useInView } from "framer-motion";
+import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { Container, Form, Modal, Card, Col, Row, Button } from "react-bootstrap";
+import { Form, Card,  Row, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
   const ref = useRef(null);
-  // const isInView = useInView(ref, { once: true })
-  // const [show, setShow] = useState(true);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -47,8 +45,6 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          // isInView(false)
-          // setShow(false);
 
           setForm({
             name: "",
@@ -73,10 +69,6 @@ const Contact = () => {
     <>
     <section id="contact" ref={ref}>
       <motion.div
-        // style = {{
-        //   transform: isInView ? "none" : "translateX(-200px)",
-        //   variant:
-        // }}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

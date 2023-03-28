@@ -6817,25 +6817,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
+/* harmony import */ var react_intersection_observer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-intersection-observer */ "./node_modules/react-intersection-observer/react-intersection-observer.modern.mjs");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
 var About = function About() {
+  var control = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useAnimation)();
+  var _useInView = (0,react_intersection_observer__WEBPACK_IMPORTED_MODULE_2__.useInView)(),
+    _useInView2 = _slicedToArray(_useInView, 2),
+    ref = _useInView2[0],
+    inView = _useInView2[1];
+  var leftSlide = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      transition: {
+        duration: 0.3,
+        delay: 0.1
+      }
+    },
+    hidden: {
+      opacity: 0,
+      scale: 1,
+      x: -200
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "about"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div, {
-    initial: "hidden",
-    whileInView: "visible",
-    viewport: {
-      once: true
-    },
-    layoutScroll: true,
-    animate: {
-      transform: "translateX(100px)"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["default"].Title, null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["default"].Body, null, "Natalie DeYoung Ricci is a software developer working and coding in Los Angeles.")))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    ref: ref,
+    variants: leftSlide,
+    animate: control,
+    initial: "hidden"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Body, null, "Natalie DeYoung Ricci is a software developer working and coding in Los Angeles.")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
 
@@ -6906,8 +6938,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var Contact = function Contact() {
   var ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  // const isInView = useInView(ref, { once: true })
-  // const [show, setShow] = useState(true);
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
       name: "",
       email: "",
@@ -6937,9 +6967,6 @@ var Contact = function Contact() {
       message: form.message
     }, "AKL91W-5ZEs9Cy67g").then(function () {
       setLoading(false);
-      // isInView(false)
-      // setShow(false);
-
       setForm({
         name: "",
         email: "",
@@ -6956,10 +6983,6 @@ var Contact = function Contact() {
     id: "contact",
     ref: ref
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.div, {
-    // style = {{
-    //   transform: isInView ? "none" : "translateX(-200px)",
-    //   variant:
-    // }}
     initial: "hidden",
     whileInView: "visible",
     viewport: {
@@ -7076,20 +7099,20 @@ var Home = function Home() {
     id: "navbar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_TopNav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
     smooth: true,
-    to: "/#home"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Landing__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
+    to: "/"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
     smooth: true,
     to: "/#about"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_About__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_6__.HashLink, {
     smooth: true,
     to: "/#contact"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Contact__WEBPACK_IMPORTED_MODULE_4__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "home"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Landing__WEBPACK_IMPORTED_MODULE_1__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "about"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_About__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "contact"
-  }));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Contact__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
@@ -53043,6 +53066,141 @@ function calcGeneratorVelocity(resolveValue, t, current) {
 
 /***/ }),
 
+/***/ "./node_modules/framer-motion/dist/es/animation/hooks/animation-controls.mjs":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/hooks/animation-controls.mjs ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "animationControls": () => (/* binding */ animationControls)
+/* harmony export */ });
+/* harmony import */ var _utils_errors_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/errors.mjs */ "./node_modules/framer-motion/dist/es/utils/errors.mjs");
+/* harmony import */ var _render_utils_setters_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../render/utils/setters.mjs */ "./node_modules/framer-motion/dist/es/render/utils/setters.mjs");
+/* harmony import */ var _interfaces_visual_element_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../interfaces/visual-element.mjs */ "./node_modules/framer-motion/dist/es/animation/interfaces/visual-element.mjs");
+
+
+
+
+function stopAnimation(visualElement) {
+    visualElement.values.forEach((value) => value.stop());
+}
+/**
+ * @public
+ */
+function animationControls() {
+    /**
+     * Track whether the host component has mounted.
+     */
+    let hasMounted = false;
+    /**
+     * A collection of linked component animation controls.
+     */
+    const subscribers = new Set();
+    const controls = {
+        subscribe(visualElement) {
+            subscribers.add(visualElement);
+            return () => void subscribers.delete(visualElement);
+        },
+        start(definition, transitionOverride) {
+            (0,_utils_errors_mjs__WEBPACK_IMPORTED_MODULE_0__.invariant)(hasMounted, "controls.start() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+            const animations = [];
+            subscribers.forEach((visualElement) => {
+                animations.push((0,_interfaces_visual_element_mjs__WEBPACK_IMPORTED_MODULE_1__.animateVisualElement)(visualElement, definition, {
+                    transitionOverride,
+                }));
+            });
+            return Promise.all(animations);
+        },
+        set(definition) {
+            (0,_utils_errors_mjs__WEBPACK_IMPORTED_MODULE_0__.invariant)(hasMounted, "controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+            return subscribers.forEach((visualElement) => {
+                (0,_render_utils_setters_mjs__WEBPACK_IMPORTED_MODULE_2__.setValues)(visualElement, definition);
+            });
+        },
+        stop() {
+            subscribers.forEach((visualElement) => {
+                stopAnimation(visualElement);
+            });
+        },
+        mount() {
+            hasMounted = true;
+            return () => {
+                hasMounted = false;
+                controls.stop();
+            };
+        },
+    };
+    return controls;
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs":
+/*!******************************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useAnimation": () => (/* binding */ useAnimation),
+/* harmony export */   "useAnimationControls": () => (/* binding */ useAnimationControls)
+/* harmony export */ });
+/* harmony import */ var _animation_controls_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./animation-controls.mjs */ "./node_modules/framer-motion/dist/es/animation/hooks/animation-controls.mjs");
+/* harmony import */ var _utils_use_constant_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/use-constant.mjs */ "./node_modules/framer-motion/dist/es/utils/use-constant.mjs");
+/* harmony import */ var _utils_use_isomorphic_effect_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/use-isomorphic-effect.mjs */ "./node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs");
+
+
+
+
+/**
+ * Creates `AnimationControls`, which can be used to manually start, stop
+ * and sequence animations on one or more components.
+ *
+ * The returned `AnimationControls` should be passed to the `animate` property
+ * of the components you want to animate.
+ *
+ * These components can then be animated with the `start` method.
+ *
+ * ```jsx
+ * import * as React from 'react'
+ * import { motion, useAnimation } from 'framer-motion'
+ *
+ * export function MyComponent(props) {
+ *    const controls = useAnimation()
+ *
+ *    controls.start({
+ *        x: 100,
+ *        transition: { duration: 0.5 },
+ *    })
+ *
+ *    return <motion.div animate={controls} />
+ * }
+ * ```
+ *
+ * @returns Animation controller with `start` and `stop` methods
+ *
+ * @public
+ */
+function useAnimationControls() {
+    const controls = (0,_utils_use_constant_mjs__WEBPACK_IMPORTED_MODULE_0__.useConstant)(_animation_controls_mjs__WEBPACK_IMPORTED_MODULE_1__.animationControls);
+    (0,_utils_use_isomorphic_effect_mjs__WEBPACK_IMPORTED_MODULE_2__.useIsomorphicLayoutEffect)(controls.mount, []);
+    return controls;
+}
+const useAnimation = useAnimationControls;
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/framer-motion/dist/es/animation/interfaces/motion-value.mjs":
 /*!**********************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/animation/interfaces/motion-value.mjs ***!
@@ -65164,6 +65322,481 @@ function resolveMotionValue(value) {
 }
 
 
+
+
+/***/ }),
+
+/***/ "./node_modules/react-intersection-observer/react-intersection-observer.modern.mjs":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/react-intersection-observer/react-intersection-observer.modern.mjs ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "InView": () => (/* binding */ InView),
+/* harmony export */   "defaultFallbackInView": () => (/* binding */ defaultFallbackInView),
+/* harmony export */   "observe": () => (/* binding */ observe),
+/* harmony export */   "useInView": () => (/* binding */ useInView)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+const observerMap = new Map();
+const RootIds = new WeakMap();
+let rootId = 0;
+let unsupportedValue = undefined;
+/**
+ * What should be the default behavior if the IntersectionObserver is unsupported?
+ * Ideally the polyfill has been loaded, you can have the following happen:
+ * - `undefined`: Throw an error
+ * - `true` or `false`: Set the `inView` value to this regardless of intersection state
+ * **/
+
+function defaultFallbackInView(inView) {
+  unsupportedValue = inView;
+}
+/**
+ * Generate a unique ID for the root element
+ * @param root
+ */
+
+function getRootId(root) {
+  if (!root) return '0';
+  if (RootIds.has(root)) return RootIds.get(root);
+  rootId += 1;
+  RootIds.set(root, rootId.toString());
+  return RootIds.get(root);
+}
+/**
+ * Convert the options to a string Id, based on the values.
+ * Ensures we can reuse the same observer when observing elements with the same options.
+ * @param options
+ */
+
+
+function optionsToId(options) {
+  return Object.keys(options).sort().filter(key => options[key] !== undefined).map(key => {
+    return `${key}_${key === 'root' ? getRootId(options.root) : options[key]}`;
+  }).toString();
+}
+
+function createObserver(options) {
+  // Create a unique ID for this observer instance, based on the root, root margin and threshold.
+  let id = optionsToId(options);
+  let instance = observerMap.get(id);
+
+  if (!instance) {
+    // Create a map of elements this observer is going to observe. Each element has a list of callbacks that should be triggered, once it comes into view.
+    const elements = new Map();
+    let thresholds;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        var _elements$get;
+
+        // While it would be nice if you could just look at isIntersecting to determine if the component is inside the viewport, browsers can't agree on how to use it.
+        // -Firefox ignores `threshold` when considering `isIntersecting`, so it will never be false again if `threshold` is > 0
+        const inView = entry.isIntersecting && thresholds.some(threshold => entry.intersectionRatio >= threshold); // @ts-ignore support IntersectionObserver v2
+
+        if (options.trackVisibility && typeof entry.isVisible === 'undefined') {
+          // The browser doesn't support Intersection Observer v2, falling back to v1 behavior.
+          // @ts-ignore
+          entry.isVisible = inView;
+        }
+
+        (_elements$get = elements.get(entry.target)) == null ? void 0 : _elements$get.forEach(callback => {
+          callback(inView, entry);
+        });
+      });
+    }, options); // Ensure we have a valid thresholds array. If not, use the threshold from the options
+
+    thresholds = observer.thresholds || (Array.isArray(options.threshold) ? options.threshold : [options.threshold || 0]);
+    instance = {
+      id,
+      observer,
+      elements
+    };
+    observerMap.set(id, instance);
+  }
+
+  return instance;
+}
+/**
+ * @param element - DOM Element to observe
+ * @param callback - Callback function to trigger when intersection status changes
+ * @param options - Intersection Observer options
+ * @param fallbackInView - Fallback inView value.
+ * @return Function - Cleanup function that should be triggered to unregister the observer
+ */
+
+
+function observe(element, callback, options = {}, fallbackInView = unsupportedValue) {
+  if (typeof window.IntersectionObserver === 'undefined' && fallbackInView !== undefined) {
+    const bounds = element.getBoundingClientRect();
+    callback(fallbackInView, {
+      isIntersecting: fallbackInView,
+      target: element,
+      intersectionRatio: typeof options.threshold === 'number' ? options.threshold : 0,
+      time: 0,
+      boundingClientRect: bounds,
+      intersectionRect: bounds,
+      rootBounds: bounds
+    });
+    return () => {// Nothing to cleanup
+    };
+  } // An observer with the same options can be reused, so lets use this fact
+
+
+  const {
+    id,
+    observer,
+    elements
+  } = createObserver(options); // Register the callback listener for this element
+
+  let callbacks = elements.get(element) || [];
+
+  if (!elements.has(element)) {
+    elements.set(element, callbacks);
+  }
+
+  callbacks.push(callback);
+  observer.observe(element);
+  return function unobserve() {
+    // Remove the callback from the callback list
+    callbacks.splice(callbacks.indexOf(callback), 1);
+
+    if (callbacks.length === 0) {
+      // No more callback exists for element, so destroy it
+      elements.delete(element);
+      observer.unobserve(element);
+    }
+
+    if (elements.size === 0) {
+      // No more elements are being observer by this instance, so destroy it
+      observer.disconnect();
+      observerMap.delete(id);
+    }
+  };
+}
+
+const _excluded = ["children", "as", "triggerOnce", "threshold", "root", "rootMargin", "onChange", "skip", "trackVisibility", "delay", "initialInView", "fallbackInView"];
+
+function isPlainChildren(props) {
+  return typeof props.children !== 'function';
+}
+/**
+ ## Render props
+
+ To use the `<InView>` component, you pass it a function. It will be called
+ whenever the state changes, with the new value of `inView`. In addition to the
+ `inView` prop, children also receive a `ref` that should be set on the
+ containing DOM element. This is the element that the IntersectionObserver will
+ monitor.
+
+ If you need it, you can also access the
+ [`IntersectionObserverEntry`](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry)
+ on `entry`, giving you access to all the details about the current intersection
+ state.
+
+ ```jsx
+ import { InView } from 'react-intersection-observer';
+
+ const Component = () => (
+ <InView>
+ {({ inView, ref, entry }) => (
+      <div ref={ref}>
+        <h2>{`Header inside viewport ${inView}.`}</h2>
+      </div>
+    )}
+ </InView>
+ );
+
+ export default Component;
+ ```
+
+ ## Plain children
+
+ You can pass any element to the `<InView />`, and it will handle creating the
+ wrapping DOM element. Add a handler to the `onChange` method, and control the
+ state in your own component. Any extra props you add to `<InView>` will be
+ passed to the HTML element, allowing you set the `className`, `style`, etc.
+
+ ```jsx
+ import { InView } from 'react-intersection-observer';
+
+ const Component = () => (
+ <InView as="div" onChange={(inView, entry) => console.log('Inview:', inView)}>
+ <h2>Plain children are always rendered. Use onChange to monitor state.</h2>
+ </InView>
+ );
+
+ export default Component;
+ ```
+ */
+
+
+class InView extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  constructor(props) {
+    super(props);
+    this.node = null;
+    this._unobserveCb = null;
+
+    this.handleNode = node => {
+      if (this.node) {
+        // Clear the old observer, before we start observing a new element
+        this.unobserve();
+
+        if (!node && !this.props.triggerOnce && !this.props.skip) {
+          // Reset the state if we get a new node, and we aren't ignoring updates
+          this.setState({
+            inView: !!this.props.initialInView,
+            entry: undefined
+          });
+        }
+      }
+
+      this.node = node ? node : null;
+      this.observeNode();
+    };
+
+    this.handleChange = (inView, entry) => {
+      if (inView && this.props.triggerOnce) {
+        // If `triggerOnce` is true, we should stop observing the element.
+        this.unobserve();
+      }
+
+      if (!isPlainChildren(this.props)) {
+        // Store the current State, so we can pass it to the children in the next render update
+        // There's no reason to update the state for plain children, since it's not used in the rendering.
+        this.setState({
+          inView,
+          entry
+        });
+      }
+
+      if (this.props.onChange) {
+        // If the user is actively listening for onChange, always trigger it
+        this.props.onChange(inView, entry);
+      }
+    };
+
+    this.state = {
+      inView: !!props.initialInView,
+      entry: undefined
+    };
+  }
+
+  componentDidUpdate(prevProps) {
+    // If a IntersectionObserver option changed, reinit the observer
+    if (prevProps.rootMargin !== this.props.rootMargin || prevProps.root !== this.props.root || prevProps.threshold !== this.props.threshold || prevProps.skip !== this.props.skip || prevProps.trackVisibility !== this.props.trackVisibility || prevProps.delay !== this.props.delay) {
+      this.unobserve();
+      this.observeNode();
+    }
+  }
+
+  componentWillUnmount() {
+    this.unobserve();
+    this.node = null;
+  }
+
+  observeNode() {
+    if (!this.node || this.props.skip) return;
+    const {
+      threshold,
+      root,
+      rootMargin,
+      trackVisibility,
+      delay,
+      fallbackInView
+    } = this.props;
+    this._unobserveCb = observe(this.node, this.handleChange, {
+      threshold,
+      root,
+      rootMargin,
+      // @ts-ignore
+      trackVisibility,
+      // @ts-ignore
+      delay
+    }, fallbackInView);
+  }
+
+  unobserve() {
+    if (this._unobserveCb) {
+      this._unobserveCb();
+
+      this._unobserveCb = null;
+    }
+  }
+
+  render() {
+    if (!isPlainChildren(this.props)) {
+      const {
+        inView,
+        entry
+      } = this.state;
+      return this.props.children({
+        inView,
+        entry,
+        ref: this.handleNode
+      });
+    }
+
+    const _this$props = this.props,
+          {
+      children,
+      as
+    } = _this$props,
+          props = _objectWithoutPropertiesLoose(_this$props, _excluded);
+
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(as || 'div', _extends({
+      ref: this.handleNode
+    }, props), children);
+  }
+
+}
+
+/**
+ * React Hooks make it easy to monitor the `inView` state of your components. Call
+ * the `useInView` hook with the (optional) [options](#options) you need. It will
+ * return an array containing a `ref`, the `inView` status and the current
+ * [`entry`](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry).
+ * Assign the `ref` to the DOM element you want to monitor, and the hook will
+ * report the status.
+ *
+ * @example
+ * ```jsx
+ * import React from 'react';
+ * import { useInView } from 'react-intersection-observer';
+ *
+ * const Component = () => {
+ *   const { ref, inView, entry } = useInView({
+ *       threshold: 0,
+ *   });
+ *
+ *   return (
+ *     <div ref={ref}>
+ *       <h2>{`Header inside viewport ${inView}.`}</h2>
+ *     </div>
+ *   );
+ * };
+ * ```
+ */
+
+function useInView({
+  threshold,
+  delay,
+  trackVisibility,
+  rootMargin,
+  root,
+  triggerOnce,
+  skip,
+  initialInView,
+  fallbackInView,
+  onChange
+} = {}) {
+  var _state$entry;
+
+  const [ref, setRef] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+  const callback = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
+  const [state, setState] = react__WEBPACK_IMPORTED_MODULE_0__.useState({
+    inView: !!initialInView,
+    entry: undefined
+  }); // Store the onChange callback in a `ref`, so we can access the latest instance
+  // inside the `useEffect`, but without triggering a rerender.
+
+  callback.current = onChange;
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    // Ensure we have node ref, and that we shouldn't skip observing
+    if (skip || !ref) return;
+    let unobserve;
+    unobserve = observe(ref, (inView, entry) => {
+      setState({
+        inView,
+        entry
+      });
+      if (callback.current) callback.current(inView, entry);
+
+      if (entry.isIntersecting && triggerOnce && unobserve) {
+        // If it should only trigger once, unobserve the element after it's inView
+        unobserve();
+        unobserve = undefined;
+      }
+    }, {
+      root,
+      rootMargin,
+      threshold,
+      // @ts-ignore
+      trackVisibility,
+      // @ts-ignore
+      delay
+    }, fallbackInView);
+    return () => {
+      if (unobserve) {
+        unobserve();
+      }
+    };
+  }, // We break the rule here, because we aren't including the actual `threshold` variable
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  [// If the threshold is an array, convert it to a string, so it won't change between renders.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  Array.isArray(threshold) ? threshold.toString() : threshold, ref, root, rootMargin, triggerOnce, skip, trackVisibility, fallbackInView, delay]);
+  const entryTarget = (_state$entry = state.entry) == null ? void 0 : _state$entry.target;
+  const previousEntryTarget = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
+
+  if (!ref && entryTarget && !triggerOnce && !skip && previousEntryTarget.current !== entryTarget) {
+    // If we don't have a node ref, then reset the state (unless the hook is set to only `triggerOnce` or `skip`)
+    // This ensures we correctly reflect the current state - If you aren't observing anything, then nothing is inView
+    previousEntryTarget.current = entryTarget;
+    setState({
+      inView: !!initialInView,
+      entry: undefined
+    });
+  }
+
+  const result = [setRef, state.inView, state.entry]; // Support object destructuring, by adding the specific values.
+
+  result.ref = result[0];
+  result.inView = result[1];
+  result.entry = result[2];
+  return result;
+}
+
+
+//# sourceMappingURL=react-intersection-observer.modern.mjs.map
 
 
 /***/ })

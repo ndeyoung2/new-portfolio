@@ -13,19 +13,21 @@ const Home = () => {
     <TopNav />
     </section>
       <nav>
-      <HashLink smooth to="/#home">{<Landing/>}</HashLink>
-        <HashLink smooth to="/#about">{<About/>}</HashLink>
-        <HashLink smooth to="/#contact">{<Contact/>}</HashLink>
+      <HashLink smooth to="/"></HashLink>
+        <HashLink smooth to="/#about"></HashLink>
+        <HashLink smooth to="/#contact"></HashLink>
       </nav>
 
       <section id="home">
-        <div></div>
+        <div>{<Landing/>}</div>
       </section>
 
       <section id="about">
+      {<About/>}
       </section>
 
       <section id="contact">
+      {<Contact/>}
       </section>
     </BrowserRouter>
   );

@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card } from "react-bootstrap";
-import { motion} from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const leftSlide = {
+    visible: {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      transition: { duration: 0.3, delay: 0.1 },
+    },
+    hidden: { opacity: 0, scale: 1, x: -200 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <>
       <section id="about">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        layoutScroll
-        animate={{ transform: "translateX(100px)", }}
-      >
+        <motion.div
+          ref={ref}
+          variants={leftSlide}
+          animate={control}
+          initial="hidden"
+        >
           <Card>
             <Card.Title>About</Card.Title>
             <Card.Body>
@@ -20,7 +42,7 @@ const About = () => {
               in Los Angeles.
             </Card.Body>
           </Card>
-          </motion.div>
+        </motion.div>
       </section>
     </>
   );
