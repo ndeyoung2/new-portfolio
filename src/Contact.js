@@ -1,15 +1,14 @@
 import React, { TextareaHTMLAttributes, useState, useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useInView } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { Container, Form, Modal, Card, Col, Row, Button } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 
 const Contact = () => {
-  const { scrollYProgress } = useScroll();
-  const { register, handleSubmit } = useForm();
-  const formRef = useRef();
-  const [show, setShow] = useState(true);
+  const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true })
+  // const [show, setShow] = useState(true);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -28,7 +27,7 @@ const Contact = () => {
     });
   };
 
-  const onSubmit = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     setLoading(true);
 
@@ -48,16 +47,18 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          setShow(false);
-          alert(
-            "Thank you for reaching out! I will reply as soon as possible."
-          );
+          // isInView(false)
+          // setShow(false);
 
           setForm({
             name: "",
             email: "",
             message: "",
           });
+          alert(
+            "Thank you for reaching out! I will reply as soon as possible."
+          );
+
         },
         (error) => {
           setLoading(false);
@@ -69,22 +70,30 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
+    <>
+    <section id="contact" ref={ref}>
       <motion.div
-          style={{ scaleX: scrollYProgress }}
-          initial="hidden"
+        // style = {{
+        //   transform: isInView ? "none" : "translateX(-200px)",
+        //   variant:
+        // }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 }
+        }}
         >
-    <Card>
       <Card
-      className="modal"
+      className="card"
       size='lg'
-      show='show'
       onSubmit={handleSubmit}>
         <Card.Header>
         <Card.Title>Contact Me</Card.Title>
         </Card.Header>
         <Card.Body className="show-grid">
-          <Container>
           <Form>
             <Form.Group>
               <Row>
@@ -135,12 +144,11 @@ const Contact = () => {
               </Row>
             </Form.Group>
           </Form>
-          </Container>
         </Card.Body>
       </Card>
-    </Card>
     </motion.div>
     </section>
+    </>
   );
 };
 export default Contact;
