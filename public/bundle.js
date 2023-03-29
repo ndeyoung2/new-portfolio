@@ -6843,8 +6843,8 @@ var About = function About() {
       scale: 1,
       x: 0,
       transition: {
-        duration: 0.3,
-        delay: 0.1
+        duration: 0.6,
+        delay: 0.2
       }
     },
     hidden: {
@@ -7417,22 +7417,27 @@ var TopNav = function TopNav() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
     expand: "lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item",
     as: "ul"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "/"
   }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item",
     as: "ul"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#about"
   }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item",
     as: "ul"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#tech"
   }, "Tech")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item",
     as: "ul"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#projects"
   }, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item",
     as: "ul"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#contact"
@@ -7593,7 +7598,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-top: 0;\n  padding-bottom: 50rem;\n  min-height: 100vh;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #162e25;\n  z-index: -1;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n/* .hero {\n\n} */\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 2rem;\n  border-radius: 0.3rem;\n  text-align-last: left;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n}\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;;AAEA;EACE,SAAS;EACT,cAAc;EACd,qBAAqB;EACrB,iBAAiB;EACjB,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,cAAc;EACd,WAAW;AACb;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;;GAEG;;AAEH;EACE,qCAAqC;AACvC;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;EACnB,qBAAqB;EACrB,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,mBAAmB;AACrB","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-top: 0;\n  padding-bottom: 50rem;\n  min-height: 100vh;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  color: #162e25;\n  z-index: -1;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n/* .hero {\n\n} */\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 2rem;\n  border-radius: 0.3rem;\n  text-align-last: left;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n/* .hero {\n\n} */\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 2rem;\n  border-radius: 0.3rem;\n  text-align-last: left;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n}\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;;AAEA;EACE,SAAS;EACT,sBAAsB;EACtB,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;;GAEG;;AAEH;EACE,qCAAqC;AACvC;;AAEA;EACE,oBAAoB;EACpB,mBAAmB;EACnB,qBAAqB;EACrB,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,mBAAmB;AACrB","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n/* .hero {\n\n} */\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 2rem;\n  border-radius: 0.3rem;\n  text-align-last: left;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7620,7 +7625,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  right: 25px;\n  /* sx={{ backdropFilter: \"blur(20px)\" }}\n  style={{ backgroundColor: \"transparent\", boxShadow: \"none\" }}  */\n  z-index: 100;\n  text-align: right;\n  color: #58592E;\n}\n\nul {\n  list-style-type: none;\n  margin: 0;\n  padding: 25px;\n  float: right;\n}\n\na:hover {\n  color: #7a577a;\n}\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,WAAW;EACX;kEACgE;EAChE,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,qBAAqB;EACrB,SAAS;EACT,aAAa;EACb,YAAY;AACd;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  right: 25px;\n  /* sx={{ backdropFilter: \"blur(20px)\" }}\n  style={{ backgroundColor: \"transparent\", boxShadow: \"none\" }}  */\n  z-index: 100;\n  text-align: right;\n  color: #58592E;\n}\n\nul {\n  list-style-type: none;\n  margin: 0;\n  padding: 25px;\n  float: right;\n}\n\na:hover {\n  color: #7a577a;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  /* style={{ backgroundColor: \"transparent\", boxShadow: \"none\" }}   */\n  z-index: 100;\n  text-align: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n  /* text-align: right; */\n}\n/*\n.topnav .nav-item:hover:before {\n  color: #7a577a;;\n} */\n\na.nav-link {\n  position: relative;\n  text-align: right;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7a577a;\n}\n\n\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,WAAW;EACX,UAAU;EACV,2BAA2B;EAC3B,oEAAoE;EACpE,YAAY;EACZ,iBAAiB;EACjB,6BAA6B;EAC7B,0BAA0B;EAC1B,uBAAuB;AACzB;AACA;;;GAGG;;AAEH;EACE,kBAAkB;EAClB,iBAAiB;EACjB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  /* style={{ backgroundColor: \"transparent\", boxShadow: \"none\" }}   */\n  z-index: 100;\n  text-align: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n  /* text-align: right; */\n}\n/*\n.topnav .nav-item:hover:before {\n  color: #7a577a;;\n} */\n\na.nav-link {\n  position: relative;\n  text-align: right;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7a577a;\n}\n\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

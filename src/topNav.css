@@ -1,20 +1,29 @@
 .topnav {
   position: fixed;
-  right: 25px;
-  /* sx={{ backdropFilter: "blur(20px)" }}
-  style={{ backgroundColor: "transparent", boxShadow: "none" }}  */
+  margin: 0px;
+  padding: 0;
+  min-width: 100vh !important;
+  /* style={{ backgroundColor: "transparent", boxShadow: "none" }}   */
   z-index: 100;
   text-align: right;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  /* text-align: right; */
+}
+/*
+.topnav .nav-item:hover:before {
+  color: #7a577a;;
+} */
+
+a.nav-link {
+  position: relative;
+  text-align: right;
+  right: 25px;
   color: #58592E;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 25px;
-  float: right;
-}
-
-a:hover {
+.nav-link:hover {
   color: #7a577a;
 }
+
+

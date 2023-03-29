@@ -13,7 +13,7 @@ const About = () => {
       opacity: 1,
       scale: 1,
       x: 0,
-      transition: { duration: 0.3, delay: 0.1 },
+      transition: { duration: 0.6, delay: 0.2 },
     },
     hidden: { opacity: 0, scale: 1, x: -200 },
   };
