@@ -35,7 +35,11 @@ const Tech = () => {
 
   return (
     <>
-    <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
+    <motion.div
+    ref={scope}
+    transition={"spring"}
+    animate={{ scale: 1.2 }}
+    >
       <Card>
         <Card.Header as="h5">Tools and Tech Stack</Card.Header>
         <Card.Body>
