@@ -17,7 +17,7 @@ const Landing = () => {
   return (
     <section id="landing">
       <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
-        <Card>
+        <Card id="landing">
           <Card.Title variant="h2" align="center" margin={3}>
             Natalie DeYoung Ricci
           </Card.Title>

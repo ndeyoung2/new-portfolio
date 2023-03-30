@@ -17,24 +17,23 @@ const Projects = () => {
 
   return (
     <>
-      <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
+      <motion.div ref={scope}>
         <Container id="projectsContainer">
           <Row>
             <Row>
-              <Card.Title>
-                Projects
-              </Card.Title>
+              <Card.Title>Projects</Card.Title>
             </Row>
             <Col>
               <motion.div
+                whileHover={{ scale: 1.05 }}
                 transition={{
                   type: "spring",
                   stiffness: 400,
                   damping: 10,
                 }}
               >
-                  <Card.Title id="projectsCardTitle">Intellego</Card.Title>
-                  <Card
+                <Card.Title id="projectsCardTitle">Intellego</Card.Title>
+                <Card
                   id="projectsCard"
                   as={Link}
                   to="https://intellego.onrender.com/"
@@ -51,14 +50,15 @@ const Projects = () => {
             </Col>
             <Col>
               <motion.div
+                whileHover={{ scale: 1.05 }}
                 transition={{
                   type: "spring",
                   stiffness: 400,
                   damping: 10,
                 }}
               >
-                  <Card.Title id="projectsCardTitle">Everything Honey</Card.Title>
-                  <Card
+                <Card.Title id="projectsCardTitle">Everything Honey</Card.Title>
+                <Card
                   id="projectsCard"
                   as={Link}
                   to="https://github.com/ndeyoung2/Everything-Honey"
@@ -75,22 +75,23 @@ const Projects = () => {
             </Col>
             <Col>
               <motion.div
+                whileHover={{ scale: 1.05 }}
                 transition={{
                   type: "spring",
                   stiffness: 400,
                   damping: 10,
                 }}
               >
-                  <Card.Title id="projectsCardTitle">Zen Photos</Card.Title>
-                  <Card
+                <Card.Title id="projectsCardTitle">Zen Photos</Card.Title>
+                <Card
                   id="projectsCard"
                   as={Link}
                   to="https://github.com/ndeyoung2/Zen-Photos"
+                  style={{justifyContent: "center"}}
                 >
                   <Figure>
                     <Figure.Image
                       width={300}
-
                       src="assets/zen.png"
                     ></Figure.Image>
                   </Figure>

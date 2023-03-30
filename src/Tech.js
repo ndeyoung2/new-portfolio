@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { Card, Button } from "react-bootstrap";
-import { motion, useAnimate, useInView } from "framer-motion";
+import { useAnimate, motion, useInView } from "framer-motion";
 
 const Tech = () => {
+
   const [scope, animate] = useAnimate();
 
   const ref = useRef(null);
@@ -10,9 +11,10 @@ const Tech = () => {
 
   useEffect(() => {
     if (isInView) {
-      animate(scope.current, { opacity: 1 });
+      animate(scope.current, { scale: 1.1, delay: .5, });
     }
   }, [isInView]);
+
 
   const tech = [
     "JavaScript",
@@ -35,7 +37,7 @@ const Tech = () => {
 
   return (
     <>
-      <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
+      <motion.div ref={scope} transition={'spring'} animate={{scale: 1.1}}>
         <Card  id="techCard">
           <Card.Title id="tech">
             Tools and Tech Stack
@@ -47,7 +49,7 @@ const Tech = () => {
             some familiarity with Docker as well.
             <Card.Text>
               {tech.map((item) => (
-                <Button className="button" key={item.name}>
+                <Button className="button" key={item}>
                   {item}
                 </Button>
               ))}

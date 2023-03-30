@@ -3,9 +3,6 @@
 }
 
 body {
-  margin: 0;
-  padding-bottom: 100rem;
-  position: relative;
   font-size: calc(10px + 2vmin);
   display: flex;
   color: #162e25;
@@ -24,16 +21,8 @@ code {
   font-family: "Montserrat", sans-serif;
 }
 
-/* #landing {
-  background-image: url(/public/assets/cypress.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
 .card {
-  padding: 15rem 15rem;
-  margin-bottom: 4rem;
-  border-radius: 0.3rem;
+  padding: 9rem 9rem;
   border: none;
   text-align-last: left;
   background-color: transparent;
@@ -63,16 +52,38 @@ code {
 
 #projectsContainer {
   text-align-last: center;
+  padding-top: 10rem;
 }
 
 #projectsCard  {
   padding: 1rem;
   margin: 0, 0, 0;
+  align-items: center;
 }
 
 #projectsCardTitle {
+  justify-content: center;
   padding: 1rem;
   font-size: 24px;
   margin: 0;
 }
+
+#landing {
+  margin: 0;
+  padding: 8rem;
+  position: relative;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+}
+
+#contact {
+  padding-top: 0;
+  height: 75rem;
+  width: 60rem;
+  border: none;
+  background-color: transparent;
+}
+
+
+
 

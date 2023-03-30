@@ -6832,7 +6832,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var About = function About() {
-  var control = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useAnimation)();
+  var animate = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useAnimation)();
   var _useInView = (0,react_intersection_observer__WEBPACK_IMPORTED_MODULE_2__.useInView)(),
     _useInView2 = _slicedToArray(_useInView, 2),
     ref = _useInView2[0],
@@ -6855,17 +6855,17 @@ var About = function About() {
   };
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (inView) {
-      control.start("visible");
+      animate.start("visible");
     } else {
-      control.start("hidden");
+      animate.start("hidden");
     }
-  }, [control, inView]);
+  }, [animate, inView]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "about"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
     ref: ref,
     variants: leftSlide,
-    animate: control,
+    animate: animate,
     initial: "hidden"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hi, I am Natalie Ricci, and I am a Full Stack Software Engineer. I live in the L.A. area with my husband, two kids, two cats, one dog, and 30,000 bees (I\u2019m an amateur beekeeper). As a lifelong learner, I am excited to continue developing my skills as an engineer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Most recently in higher education, I was a community college English Professor and freelance writer and editor for over eight years before attending the Grace Hopper Program, which gives me a lot of experience working with people, ideas, and communication. I look forward to improving people's lives and bettering the planet through technology."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Interests: reading, writing, drawing, painting, hiking, camping, baking, creating"))))));
 };
@@ -6998,14 +6998,20 @@ var Contact = function Contact() {
       }
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "card",
+    className: "contact",
     size: "lg",
     onSubmit: handleSubmit
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Title, null, "Contact Me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Body, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Header, {
+    as: "contact-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Title, null, "Contact Me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Body, {
     className: "show-grid"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
-    column: true,
-    sm: "2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    style: {
+      padding: ".5rem",
+      textAlign: "right"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
+    column: "lg"
   }, "Your Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Control, {
     name: "name",
     id: "name",
@@ -7015,14 +7021,18 @@ var Contact = function Contact() {
       height: "50px",
       width: "400px",
       fontFamily: "Montserrat",
-      fontSize: "medium"
+      fontSize: "large"
     },
     placeholder: "Name",
     onChange: handleChange,
     required: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
-    column: true,
-    sm: "2"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    style: {
+      padding: ".5rem",
+      paddingBottom: ".1rem"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
+    column: "lg"
   }, "Your Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Control, {
     name: "email",
     id: "email",
@@ -7032,14 +7042,17 @@ var Contact = function Contact() {
       height: "50px",
       width: "400px",
       fontFamily: "Montserrat",
-      fontSize: "medium"
+      fontSize: "large"
     },
     placeholder: "name@example.com",
     onChange: handleChange,
     required: true
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
-    column: true,
-    sm: "2"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    style: {
+      padding: ".5rem"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
+    column: "lg"
   }, "Your Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Control, {
     as: "textarea",
     name: "message",
@@ -7049,16 +7062,24 @@ var Contact = function Contact() {
       height: "200px",
       width: "400px",
       fontFamily: "Montserrat",
-      fontSize: "medium"
+      fontSize: "large"
     },
     placeholder: "Your Message",
     onChange: handleChange,
     required: true
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    style: {
+      padding: 1
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     id: "button",
     className: "button",
-    type: "submit"
-  }, "Sumbit")))))))));
+    type: "submit",
+    style: {
+      width: 75,
+      height: 50
+    }
+  }, "Sumbit"))))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
 
@@ -7216,7 +7237,9 @@ var Landing = function Landing() {
     animate: {
       scale: 1.2
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "landing"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
     variant: "h2",
     align: "center",
     margin: 3
@@ -7277,14 +7300,13 @@ var Projects = function Projects() {
     }
   }, [isInView]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
-    ref: scope,
-    transition: "spring",
-    animate: {
-      scale: 1.2
-    }
+    ref: scope
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
     id: "projectsContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, null, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    whileHover: {
+      scale: 1.05
+    },
     transition: {
       type: "spring",
       stiffness: 400,
@@ -7301,6 +7323,9 @@ var Projects = function Projects() {
     height: 200,
     src: "assets/intellego.png"
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    whileHover: {
+      scale: 1.05
+    },
     transition: {
       type: "spring",
       stiffness: 400,
@@ -7317,6 +7342,9 @@ var Projects = function Projects() {
     height: 200,
     src: "assets/honey.png"
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    whileHover: {
+      scale: 1.05
+    },
     transition: {
       type: "spring",
       stiffness: 400,
@@ -7327,7 +7355,10 @@ var Projects = function Projects() {
   }, "Zen Photos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     id: "projectsCard",
     as: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
-    to: "https://github.com/ndeyoung2/Zen-Photos"
+    to: "https://github.com/ndeyoung2/Zen-Photos",
+    style: {
+      justifyContent: "center"
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"].Image, {
     width: 300,
     src: "assets/zen.png"
@@ -7374,16 +7405,17 @@ var Tech = function Tech() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (isInView) {
       animate(scope.current, {
-        opacity: 1
+        scale: 1.1,
+        delay: .5
       });
     }
   }, [isInView]);
   var tech = ["JavaScript", "Node", "React", "Redux", "React Native", "Express", "Sequelize", "PostgreSQL", "HTML", "CSS", "Bootstrap", "Material UI", "Chart.js", "Formik", "Framer-Motion", "Socket.io"];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
     ref: scope,
-    transition: "spring",
+    transition: 'spring',
     animate: {
-      scale: 1.2
+      scale: 1.1
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
     id: "techCard"
@@ -7394,7 +7426,7 @@ var Tech = function Tech() {
   }, "Trained in object-oriented programming, I work primarily in JavaScript with the PERN stack, but am always looking to expand my skills. Currently, I am learning Typescript, Next.js, and I have some familiarity with Docker as well.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Text, null, tech.map(function (item) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
       className: "button",
-      key: item.name
+      key: item
     }, item);
   }))))));
 };
@@ -7606,7 +7638,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n/* #landing {\n  background-image: url(/public/assets/cypress.png);\n  background-size: cover;\n  background-repeat: no-repeat;\n} */\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 4rem;\n  border-radius: 0.3rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n}\n\n#projectsCardTitle {\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;;AAEA;EACE,SAAS;EACT,sBAAsB;EACtB,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,yBAAyB;AAC3B;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,qCAAqC;AACvC;;AAEA;;;;GAIG;;AAEH;EACE,oBAAoB;EACpB,mBAAmB;EACnB,qBAAqB;EACrB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,6BAA6B;EAC7B,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,SAAS;AACX","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n/* #landing {\n  background-image: url(/public/assets/cypress.png);\n  background-size: cover;\n  background-repeat: no-repeat;\n} */\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 4rem;\n  border-radius: 0.3rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n}\n\n#projectsCardTitle {\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.card {\n  padding: 9rem 9rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n  padding-top: 10rem;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#landing {\n  margin: 0;\n  padding: 8rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n\n\n\n\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;;AAEA;EACE,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,yBAAyB;AAC3B;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,qCAAqC;AACvC;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,6BAA6B;EAC7B,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,uBAAuB;EACvB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,uBAAuB;EACvB,aAAa;EACb,eAAe;EACf,SAAS;AACX;;AAEA;EACE,SAAS;EACT,aAAa;EACb,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;AACf;;AAEA;EACE,cAAc;EACd,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,6BAA6B;AAC/B","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n.card {\n  padding: 9rem 9rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n  padding-top: 10rem;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#landing {\n  margin: 0;\n  padding: 8rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n\n\n\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

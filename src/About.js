@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
-  const control = useAnimation();
+  const animate = useAnimation();
   const [ref, inView] = useInView();
 
   const leftSlide = {
@@ -20,11 +20,11 @@ const About = () => {
 
   useEffect(() => {
     if (inView) {
-      control.start("visible");
+      animate.start("visible");
     } else {
-      control.start("hidden");
+      animate.start("hidden");
     }
-  }, [control, inView]);
+  }, [animate, inView]);
 
   return (
     <>
@@ -32,7 +32,7 @@ const About = () => {
         <motion.div
           ref={ref}
           variants={leftSlide}
-          animate={control}
+          animate={animate}
           initial="hidden"
         >
           <Card>
