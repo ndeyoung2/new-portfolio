@@ -44,7 +44,7 @@ const About = () => {
             Most recently in higher education, I was a community college English Professor and freelance writer and editor for over eight years before attending the Grace Hopper Program, which gives me a lot of experience working with people, ideas, and communication. I look forward to improving people's lives and bettering the planet through technology.
             </p>
             <p>
-            Interests: reading, writing, drawing, painting, hiking, camping, baking, creating
+            When I'm not coding, you can find me reading at the beach, hiking in the woods, or baking bread in my flour-dusted kitchen.
             </p>
             </Card.Body>
           </Card>
