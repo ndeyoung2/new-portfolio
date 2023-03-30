@@ -7086,7 +7086,9 @@ var Footer = function Footer() {
     "justify-content": "right",
     style: {
       position: "fixed",
-      bottom: 0
+      bottom: 0,
+      right: 0,
+      fontSize: 14
     },
     margin: 1
   }, "\xA9 2023 Natalie DeYoung Ricci"));
