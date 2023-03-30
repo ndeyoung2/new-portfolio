@@ -7417,28 +7417,23 @@ var TopNav = function TopNav() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
     expand: "lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item",
-    as: "ul"
+    className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "/"
   }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item",
-    as: "ul"
+    className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#about"
   }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item",
-    as: "ul"
+    className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#tech"
   }, "Tech")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item",
-    as: "ul"
+    className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#projects"
   }, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item",
-    as: "ul"
+    className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#contact"
   }, "Contact")))));
@@ -7625,7 +7620,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  /* style={{ backgroundColor: \"transparent\", boxShadow: \"none\" }}   */\n  z-index: 100;\n  text-align: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n  /* text-align: right; */\n}\n/*\n.topnav .nav-item:hover:before {\n  color: #7a577a;;\n} */\n\na.nav-link {\n  position: relative;\n  text-align: right;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7a577a;\n}\n\n\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,WAAW;EACX,UAAU;EACV,2BAA2B;EAC3B,oEAAoE;EACpE,YAAY;EACZ,iBAAiB;EACjB,6BAA6B;EAC7B,0BAA0B;EAC1B,uBAAuB;AACzB;AACA;;;GAGG;;AAEH;EACE,kBAAkB;EAClB,iBAAiB;EACjB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  /* style={{ backgroundColor: \"transparent\", boxShadow: \"none\" }}   */\n  z-index: 100;\n  text-align: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n  /* text-align: right; */\n}\n/*\n.topnav .nav-item:hover:before {\n  color: #7a577a;;\n} */\n\na.nav-link {\n  position: relative;\n  text-align: right;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7a577a;\n}\n\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  text-align: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\na.nav-item {\n  text-align: right;\n}\n\na.nav-link {\n  position: relative;\n  text-align: right;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7a577a;\n}\n\n\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,WAAW;EACX,UAAU;EACV,2BAA2B;EAC3B,YAAY;EACZ,iBAAiB;EACjB,6BAA6B;EAC7B,0BAA0B;AAC5B;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  text-align: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\na.nav-item {\n  text-align: right;\n}\n\na.nav-link {\n  position: relative;\n  text-align: right;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7a577a;\n}\n\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
