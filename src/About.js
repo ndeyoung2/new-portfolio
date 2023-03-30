@@ -38,13 +38,14 @@ const About = () => {
           <Card>
             <Card.Title>About</Card.Title>
             <Card.Body>
-            Hi, I am Natalie Ricci, and I am a Full Stack Software Engineer. I live in the L.A. area with my husband, two kids, two cats, one dog, and 30,000 bees (I’m an amateur beekeeper). As a lifelong learner, I am excited to continue developing my skills as an engineer.
-            <br></br>
-            <br></br>
+            <p>Hi, I am Natalie Ricci, and I am a Full Stack Software Engineer. I live in the L.A. area with my husband, two kids, two cats, one dog, and 30,000 bees (I’m an amateur beekeeper). As a lifelong learner, I am excited to continue developing my skills as an engineer.
+            </p>
+            <p>
             Most recently in higher education, I was a community college English Professor and freelance writer and editor for over eight years before attending the Grace Hopper Program, which gives me a lot of experience working with people, ideas, and communication. I look forward to improving people's lives and bettering the planet through technology.
-            <br></br>
-            <br></br>
+            </p>
+            <p>
             Interests: reading, writing, drawing, painting, hiking, camping, baking, creating
+            </p>
             </Card.Body>
           </Card>
         </motion.div>

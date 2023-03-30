@@ -30,30 +30,30 @@ const Tech = () => {
     "Chart.js",
     "Formik",
     "Framer-Motion",
-    "Socket.io"
-  ]
+    "Socket.io",
+  ];
 
   return (
     <>
-    <motion.div
-    ref={scope}
-    transition={"spring"}
-    animate={{ scale: 1.2 }}
-    >
-      <Card>
-        <Card.Header as="h5">Tools and Tech Stack</Card.Header>
-        <Card.Body>
-          Trained in object-oriented programming, I work primarily in JavaScript
-          with the PERN stack, but am always looking to expand my skills.
-          Currently, I am learning Typescript, Next.js, and I have some
-          familiarity with Docker as well.
-          <br></br>
-          <Card.Text>{tech.map(item =>
-          <Button variant="light" key={item.name}>{item}</Button>
-          )}
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
+        <Card>
+          <Card.Title id="tech" justify-content="center">
+            Tools and Tech Stack
+          </Card.Title>
+          <Card.Body justify-content="center">
+            Trained in object-oriented programming, I work primarily in
+            JavaScript with the PERN stack, but am always looking to expand my
+            skills. Currently, I am learning Typescript, Next.js, and I have
+            some familiarity with Docker as well.
+            <Card.Text>
+              {tech.map((item) => (
+                <Button className="button" key={item.name}>
+                  {item}
+                </Button>
+              ))}
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </motion.div>
     </>
   );

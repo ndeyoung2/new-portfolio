@@ -34,15 +34,23 @@ code {
   padding: 15rem 15rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
-  text-align-last: left;
+  text-align-last: center;
   background-color: transparent;
 }
 
 .card-title {
   font-size: 50px;
   margin-bottom: 1rem;
+  background-color: transparent;
 }
 
-/* .button {
-  background-color: #734636;
-} */
+.button {
+  background-color: #58592E;
+  border: none;
+  margin: .5rem;
+  color: #E6DBB0;
+}
+
+.button:hover {
+  background-color: #7A577A;
+}
