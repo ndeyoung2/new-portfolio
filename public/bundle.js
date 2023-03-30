@@ -7246,8 +7246,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Figure.js");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/utils/use-in-view.mjs");
@@ -7277,53 +7277,60 @@ var Projects = function Projects() {
     }
   }, [isInView]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
-    whileHover: {
-      scale: 1.1
-    },
     ref: scope,
-    transition: "spring"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], null, "Intellego", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    transition: "spring",
+    animate: {
+      scale: 1.2
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "projectsContainer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, null, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
     transition: {
       type: "spring",
       stiffness: 400,
       damping: 10
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+    id: "projectsCardTitle"
+  }, "Intellego"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    id: "projectsCard",
     as: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
     to: "https://intellego.onrender.com/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"].Image, {
     width: 300,
     height: 200,
-    alt: "300x200",
     src: "assets/intellego.png"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], null, "Everything Honey", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
     transition: {
       type: "spring",
       stiffness: 400,
       damping: 10
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+    id: "projectsCardTitle"
+  }, "Everything Honey"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    id: "projectsCard",
     as: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
     to: "https://github.com/ndeyoung2/Everything-Honey"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"].Image, {
     width: 300,
     height: 200,
-    alt: "300x200",
     src: "assets/honey.png"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], null, "Zen Photos", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
     transition: {
       type: "spring",
       stiffness: 400,
       damping: 10
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+    id: "projectsCardTitle"
+  }, "Zen Photos"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    id: "projectsCard",
     as: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
     to: "https://github.com/ndeyoung2/Zen-Photos"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"].Image, {
     width: 300,
-    height: 200,
-    alt: "300x200",
-    src: "assets/zen.jpg"
+    src: "assets/zen.png"
   })))))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);
@@ -7378,9 +7385,10 @@ var Tech = function Tech() {
     animate: {
       scale: 1.2
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
-    id: "tech",
-    "justify-content": "center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "techCard"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
+    id: "tech"
   }, "Tools and Tech Stack"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
     "justify-content": "center"
   }, "Trained in object-oriented programming, I work primarily in JavaScript with the PERN stack, but am always looking to expand my skills. Currently, I am learning Typescript, Next.js, and I have some familiarity with Docker as well.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Text, null, tech.map(function (item) {
@@ -7598,7 +7606,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n/* #landing {\n  background-image: url(/public/assets/cypress.png);\n  background-size: cover;\n  background-repeat: no-repeat;\n} */\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 2rem;\n  border-radius: 0.3rem;\n  text-align-last: center;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;;AAEA;EACE,SAAS;EACT,sBAAsB;EACtB,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,yBAAyB;AAC3B;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,qCAAqC;AACvC;;AAEA;;;;GAIG;;AAEH;EACE,oBAAoB;EACpB,mBAAmB;EACnB,qBAAqB;EACrB,uBAAuB;EACvB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n/* #landing {\n  background-image: url(/public/assets/cypress.png);\n  background-size: cover;\n  background-repeat: no-repeat;\n} */\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 2rem;\n  border-radius: 0.3rem;\n  text-align-last: center;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n/* #landing {\n  background-image: url(/public/assets/cypress.png);\n  background-size: cover;\n  background-repeat: no-repeat;\n} */\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 4rem;\n  border-radius: 0.3rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n}\n\n#projectsCardTitle {\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;;AAEA;EACE,SAAS;EACT,sBAAsB;EACtB,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,yBAAyB;AAC3B;;AAEA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,qCAAqC;AACvC;;AAEA;;;;GAIG;;AAEH;EACE,oBAAoB;EACpB,mBAAmB;EACnB,qBAAqB;EACrB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,6BAA6B;EAC7B,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,SAAS;AACX","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\nbody {\n  margin: 0;\n  padding-bottom: 100rem;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  background-color: #95BFA0;\n}\n\nh1 {\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\ncode {\n  font-family: \"Montserrat\", sans-serif;\n}\n\n/* #landing {\n  background-image: url(/public/assets/cypress.png);\n  background-size: cover;\n  background-repeat: no-repeat;\n} */\n\n.card {\n  padding: 15rem 15rem;\n  margin-bottom: 4rem;\n  border-radius: 0.3rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n}\n\n#projectsCardTitle {\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

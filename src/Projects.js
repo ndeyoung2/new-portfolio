@@ -4,7 +4,6 @@ import { Col, Card, Container, Row, Figure } from "react-bootstrap";
 import { motion, useAnimate, useInView } from "framer-motion";
 
 const Projects = () => {
-
   const [scope, animate] = useAnimate();
 
   const ref = useRef(null);
@@ -18,73 +17,84 @@ const Projects = () => {
 
   return (
     <>
-      <motion.div
-      whileHover={{ scale: 1.1 }}
-      ref={scope}
-      transition={"spring"}
-      >
-        <Container>
+      <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
+        <Container id="projectsContainer">
           <Row>
-            <Row >Projects</Row>
+            <Row>
+              <Card.Title>
+                Projects
+              </Card.Title>
+            </Row>
             <Col>
-              Intellego
               <motion.div
-                   transition={{
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 10}}>
-              <Card as={Link} to="https://intellego.onrender.com/">
-                <Figure>
-                  <Figure.Image
-                    width={300}
-                    height={200}
-                    alt="300x200"
-                    src="assets/intellego.png"
-                  ></Figure.Image>
-                </Figure>
-              </Card>
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
+              >
+                  <Card.Title id="projectsCardTitle">Intellego</Card.Title>
+                  <Card
+                  id="projectsCard"
+                  as={Link}
+                  to="https://intellego.onrender.com/"
+                >
+                  <Figure>
+                    <Figure.Image
+                      width={300}
+                      height={200}
+                      src="assets/intellego.png"
+                    ></Figure.Image>
+                  </Figure>
+                </Card>
               </motion.div>
             </Col>
             <Col>
-              Everything Honey
               <motion.div
-                   transition={{
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 10}}>
-              <Card
-                as={Link}
-                to="https://github.com/ndeyoung2/Everything-Honey"
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
               >
-                <Figure>
-                  <Figure.Image
-                    width={300}
-                    height={200}
-                    alt="300x200"
-                    src="assets/honey.png"
-                  ></Figure.Image>
-                </Figure>
-              </Card>
+                  <Card.Title id="projectsCardTitle">Everything Honey</Card.Title>
+                  <Card
+                  id="projectsCard"
+                  as={Link}
+                  to="https://github.com/ndeyoung2/Everything-Honey"
+                >
+                  <Figure>
+                    <Figure.Image
+                      width={300}
+                      height={200}
+                      src="assets/honey.png"
+                    ></Figure.Image>
+                  </Figure>
+                </Card>
               </motion.div>
             </Col>
             <Col>
-              Zen Photos
               <motion.div
-                   transition={{
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 10}}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
               >
-              <Card as={Link} to="https://github.com/ndeyoung2/Zen-Photos">
-                <Figure>
-                  <Figure.Image
-                    width={300}
-                    height={200}
-                    alt="300x200"
-                    src="assets/zen.jpg"
-                  ></Figure.Image>
-                </Figure>
-              </Card>
+                  <Card.Title id="projectsCardTitle">Zen Photos</Card.Title>
+                  <Card
+                  id="projectsCard"
+                  as={Link}
+                  to="https://github.com/ndeyoung2/Zen-Photos"
+                >
+                  <Figure>
+                    <Figure.Image
+                      width={300}
+
+                      src="assets/zen.png"
+                    ></Figure.Image>
+                  </Figure>
+                </Card>
               </motion.div>
             </Col>
           </Row>

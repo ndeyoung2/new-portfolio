@@ -36,8 +36,8 @@ const Tech = () => {
   return (
     <>
       <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
-        <Card>
-          <Card.Title id="tech" justify-content="center">
+        <Card  id="techCard">
+          <Card.Title id="tech">
             Tools and Tech Stack
           </Card.Title>
           <Card.Body justify-content="center">
