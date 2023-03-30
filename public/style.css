@@ -9,6 +9,7 @@ body {
   font-size: calc(10px + 2vmin);
   display: flex;
   color: #162e25;
+  background-color: #95BFA0;
 }
 
 h1 {
@@ -19,22 +20,29 @@ h1 {
   flex-direction: column;
 }
 
-/* .hero {
-
-} */
-
 code {
   font-family: "Montserrat", sans-serif;
 }
+
+/* #landing {
+  background-image: url(/public/assets/cypress.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 
 .card {
   padding: 15rem 15rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
   text-align-last: left;
+  background-color: transparent;
 }
 
 .card-title {
   font-size: 50px;
   margin-bottom: 1rem;
 }
+
+/* .button {
+  background-color: #734636;
+} */
