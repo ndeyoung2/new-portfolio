@@ -1,34 +1,40 @@
 * {
   font-family: "Montserrat", sans-serif !important;
 }
-
+@media only screen and (max-width: 600px) {
+  #landing {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 
 body {
   font-size: calc(10px + 2vmin);
   display: flex;
   color: #162e25;
+  margin-top: 200px;
   background-color: #95BFA0;
 }
 
 h1 {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-weight: bold;
   font-size: 3rem;
-}
-
-/* .hero {
-  height: 10;
-  width: 10;
-} */
-
-#landing {
-  font-weight: bold;
+  margin: 10px;
 }
 
 .card {
-  padding: 9rem 9rem;
+  padding: 2rem 2rem;
   border: none;
   text-align-last: left;
   background-color: transparent;
@@ -52,6 +58,20 @@ h1 {
   background-color: #7A577A;
 }
 
+
+#landing {
+  font-weight: bold;
+  padding: 50px;
+  position: relative;
+  display: flex;
+}
+
+#landing.container {
+  padding: 50px;
+  position: relative;
+  display: flex;
+}
+
 #techCard {
   text-align-last: center;
 }
@@ -72,14 +92,6 @@ h1 {
   padding: 1rem;
   font-size: 24px;
   margin: 0;
-}
-
-#landing {
-  margin: 0;
-  padding: 8rem;
-  position: relative;
-  font-size: calc(10px + 2vmin);
-  display: flex;
 }
 
 #contact {
