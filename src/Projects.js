@@ -87,7 +87,7 @@ const Projects = () => {
                   id="projectsCard"
                   as={Link}
                   to="https://github.com/ndeyoung2/Zen-Photos"
-                  style={{justifyContent: "center"}}
+                  style={{ justifyContent: "center" }}
                 >
                   <Figure>
                     <Figure.Image

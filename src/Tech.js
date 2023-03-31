@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Container } from "react-bootstrap";
 import { useAnimate, motion, useInView } from "framer-motion";
 
 const Tech = () => {
@@ -38,6 +38,7 @@ const Tech = () => {
   return (
     <>
       <motion.div ref={scope} transition={'spring'} animate={{scale: 1.1}}>
+        <Container>
         <Card  id="techCard">
           <Card.Title id="tech">
             Tools and Tech Stack
@@ -56,6 +57,7 @@ const Tech = () => {
             </Card.Text>
           </Card.Body>
         </Card>
+        </Container>
       </motion.div>
     </>
   );

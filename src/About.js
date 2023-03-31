@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { motion, useAnimation } from "framer-motion";
 
 import { useInView } from "react-intersection-observer";
@@ -35,19 +35,33 @@ const About = () => {
           animate={animate}
           initial="hidden"
         >
-          <Card>
-            <Card.Title>About</Card.Title>
-            <Card.Body>
-            <p>Hi, I am Natalie Ricci, and I am a Full Stack Software Engineer. I live in the L.A. area with my husband, two kids, two cats, one dog, and 30,000 bees (I’m an amateur beekeeper). As a lifelong learner, I am excited to continue developing my skills as an engineer.
-            </p>
-            <p>
-            Most recently in higher education, I was a community college English Professor and freelance writer and editor for over eight years before attending the Grace Hopper Program, which gives me a lot of experience working with people, ideas, and communication. I look forward to improving people's lives and bettering the planet through technology.
-            </p>
-            <p>
-            When I'm not coding, you can find me reading at the beach, hiking in the woods, or baking bread in my flour-dusted kitchen.
-            </p>
-            </Card.Body>
-          </Card>
+          <Container>
+            <Card>
+              <Card.Title>About</Card.Title>
+              <Card.Body>
+                <p>
+                  Hi, I am Natalie Ricci, and I am a Full Stack Software
+                  Engineer. I live in the L.A. area with my husband, two kids,
+                  two cats, one dog, and 30,000 bees (I’m an amateur beekeeper).
+                  As a lifelong learner, I am excited to continue developing my
+                  skills as an engineer.
+                </p>
+                <p>
+                  Most recently in higher education, I was a community college
+                  English Professor and freelance writer and editor for over
+                  eight years before attending the Grace Hopper Program, which
+                  gives me a lot of experience working with people, ideas, and
+                  communication. I look forward to improving people's lives and
+                  bettering the planet through technology.
+                </p>
+                <p>
+                  When I'm not coding, you can find me reading at the beach,
+                  hiking in the woods, baking bread in my flour-dusted kitchen,
+                  and creating in all kinds of ways.
+                </p>
+              </Card.Body>
+            </Card>
+          </Container>
         </motion.div>
       </section>
     </>

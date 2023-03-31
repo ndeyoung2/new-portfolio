@@ -6817,7 +6817,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
 /* harmony import */ var react_intersection_observer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-intersection-observer */ "./node_modules/react-intersection-observer/react-intersection-observer.modern.mjs");
@@ -6867,7 +6868,7 @@ var About = function About() {
     variants: leftSlide,
     animate: animate,
     initial: "hidden"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hi, I am Natalie Ricci, and I am a Full Stack Software Engineer. I live in the L.A. area with my husband, two kids, two cats, one dog, and 30,000 bees (I\u2019m an amateur beekeeper). As a lifelong learner, I am excited to continue developing my skills as an engineer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Most recently in higher education, I was a community college English Professor and freelance writer and editor for over eight years before attending the Grace Hopper Program, which gives me a lot of experience working with people, ideas, and communication. I look forward to improving people's lives and bettering the planet through technology."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "When I'm not coding, you can find me reading at the beach, hiking in the woods, or baking bread in my flour-dusted kitchen."))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Title, null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Body, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Hi, I am Natalie Ricci, and I am a Full Stack Software Engineer. I live in the L.A. area with my husband, two kids, two cats, one dog, and 30,000 bees (I\u2019m an amateur beekeeper). As a lifelong learner, I am excited to continue developing my skills as an engineer."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Most recently in higher education, I was a community college English Professor and freelance writer and editor for over eight years before attending the Grace Hopper Program, which gives me a lot of experience working with people, ideas, and communication. I look forward to improving people's lives and bettering the planet through technology."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "When I'm not coding, you can find me reading at the beach, hiking in the woods, baking bread in my flour-dusted kitchen, and creating in all kinds of ways.")))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
 
@@ -6910,10 +6911,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Form.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Form.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
 /* harmony import */ var _emailjs_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emailjs/browser */ "./node_modules/@emailjs/browser/es/index.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -6997,22 +6999,22 @@ var Contact = function Contact() {
         scale: 0
       }
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "contact",
     size: "lg",
     onSubmit: handleSubmit
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Header, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Header, {
     as: "contact-header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Title, null, "Contact Me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"].Body, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, null, "Contact Me")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
     className: "show-grid"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     style: {
       padding: ".5rem",
       textAlign: "right"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Label, {
     column: "lg"
-  }, "Your Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Control, {
+  }, "Your Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Control, {
     name: "name",
     id: "name",
     type: "text",
@@ -7026,14 +7028,14 @@ var Contact = function Contact() {
     placeholder: "Name",
     onChange: handleChange,
     required: true
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     style: {
       padding: ".5rem",
       paddingBottom: ".1rem"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Label, {
     column: "lg"
-  }, "Your Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Control, {
+  }, "Your Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Control, {
     name: "email",
     id: "email",
     type: "email",
@@ -7047,13 +7049,13 @@ var Contact = function Contact() {
     placeholder: "name@example.com",
     onChange: handleChange,
     required: true
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Group, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     style: {
       padding: ".5rem"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Label, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Label, {
     column: "lg"
-  }, "Your Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Control, {
+  }, "Your Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Control, {
     as: "textarea",
     name: "message",
     id: "textarea",
@@ -7067,11 +7069,11 @@ var Contact = function Contact() {
     placeholder: "Your Message",
     onChange: handleChange,
     required: true
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     style: {
       padding: 1
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
     id: "button",
     className: "button",
     type: "submit",
@@ -7079,7 +7081,7 @@ var Contact = function Contact() {
       width: 75,
       height: 50
     }
-  }, "Sumbit"))))))));
+  }, "Sumbit")))))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
 
@@ -7206,8 +7208,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/utils/use-in-view.mjs");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Image.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -7242,15 +7244,21 @@ var Landing = function Landing() {
       scale: 1.2
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    id: "landing"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], null, "Natalie DeYoung Ricci"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], null, "Full Stack Software Engineer"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "landing"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "hero"
+  }, "Natalie DeYoung Ricci", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null), "Full Stack Software Engineer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    xs: 4,
+    lg: "1.5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "hero-image"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: "hero",
     src: "/assets/hero.png",
     width: 200,
     height: 200,
-    alt: "hero",
-    margin: "5"
-  }))))));
+    alt: "hero"
+  })))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Landing);
 
@@ -7384,8 +7392,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Button.js");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/utils/use-in-view.mjs");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
@@ -7420,18 +7429,18 @@ var Tech = function Tech() {
     animate: {
       scale: 1.1
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
     id: "techCard"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Title, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Title, {
     id: "tech"
-  }, "Tools and Tech Stack"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
+  }, "Tools and Tech Stack"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Body, {
     "justify-content": "center"
-  }, "Trained in object-oriented programming, I work primarily in JavaScript with the PERN stack, but am always looking to expand my skills. Currently, I am learning Typescript, Next.js, and I have some familiarity with Docker as well.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"].Text, null, tech.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Trained in object-oriented programming, I work primarily in JavaScript with the PERN stack, but am always looking to expand my skills. Currently, I am learning Typescript, Next.js, and I have some familiarity with Docker as well.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"].Text, null, tech.map(function (item) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
       className: "button",
       key: item
     }, item);
-  }))))));
+  })))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tech);
 
@@ -7641,7 +7650,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n@media only screen and (max-width: 600px) {\n  #landing {\n    display: flex;\n    flex-wrap: wrap;\n  }\n  h1 {\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n  }\n  .card {\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n  }\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  margin-top: 200px;\n  background-color: #95BFA0;\n}\n\nh1 {\n  min-height: 100vh;\n  font-weight: bold;\n  font-size: 3rem;\n  margin: 10px;\n}\n\n.card {\n  padding: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n\n#landing {\n  font-weight: bold;\n  padding: 50px;\n  position: relative;\n  display: flex;\n}\n\n#landing.container {\n  padding: 50px;\n  position: relative;\n  display: flex;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n  padding-top: 10rem;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n\n\n\n\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;AACA;EACE;IACE,aAAa;IACb,eAAe;EACjB;EACA;IACE,aAAa;IACb,eAAe;IACf,sBAAsB;EACxB;EACA;IACE,aAAa;IACb,eAAe;IACf,sBAAsB;EACxB;AACF;;AAEA;EACE,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,iBAAiB;EACjB,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;EACjB,eAAe;EACf,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,6BAA6B;EAC7B,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;;AAGA;EACE,iBAAiB;EACjB,aAAa;EACb,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,uBAAuB;EACvB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,uBAAuB;EACvB,aAAa;EACb,eAAe;EACf,SAAS;AACX;;AAEA;EACE,cAAc;EACd,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,6BAA6B;AAC/B","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n@media only screen and (max-width: 600px) {\n  #landing {\n    display: flex;\n    flex-wrap: wrap;\n  }\n  h1 {\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n  }\n  .card {\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n  }\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  margin-top: 200px;\n  background-color: #95BFA0;\n}\n\nh1 {\n  min-height: 100vh;\n  font-weight: bold;\n  font-size: 3rem;\n  margin: 10px;\n}\n\n.card {\n  padding: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 50px;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n\n#landing {\n  font-weight: bold;\n  padding: 50px;\n  position: relative;\n  display: flex;\n}\n\n#landing.container {\n  padding: 50px;\n  position: relative;\n  display: flex;\n}\n\n#techCard {\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n  padding-top: 10rem;\n}\n\n#projectsCard  {\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n\n\n\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n@media only screen and (max-width: 600px) {\n  * {\n    display: flex;\n    flex-wrap: wrap;\n  }\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  margin-left: 50px;\n  background-color: #95BFA0;\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  height: 100%;\n  display: flex;\n  font-weight: bold;\n  font-size: 3rem;\n  padding: 5px;\n}\n\n.col {\n  padding: 10px;\n  margin: 10px;\n}\n\n.hero-image.card {\n  justify-items: start;\n  margin: 15px;\n  padding: 0;\n}\n\n.container {\n  flex-flow: column wrap;\n  flex-wrap: wrap;\n  display: flex;\n  margin-top: 12rem;\n  margin-left: 6rem;\n  width: 90%;\n  height: 31rem;\n  position: relative;\n  /* overflow: hidden; */\n}\n\n.card {\n  flex-wrap: wrap;\n  flex-flow: column;\n  padding: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 3rem;\n  margin-top: 6prem;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#landing {\n  font-weight: bold;\n  position: relative;\n  display: flex;\n}\n\n#landing.container {\n  align-items: center;\n  position: relative;\n  display: flex;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  flex-flow: column;\n  flex-wrap: wrap;\n  text-align-last: center;\n}\n\n#projectsCard  {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  margin-top: 6px;\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n\n\n\n\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;AACA;EACE;IACE,aAAa;IACb,eAAe;EACjB;AACF;;AAEA;EACE,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,iBAAiB;EACjB,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,iBAAiB;EACjB,eAAe;EACf,YAAY;AACd;;AAEA;EACE,aAAa;EACb,YAAY;AACd;;AAEA;EACE,oBAAoB;EACpB,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,sBAAsB;EACtB,eAAe;EACf,aAAa;EACb,iBAAiB;EACjB,iBAAiB;EACjB,UAAU;EACV,aAAa;EACb,kBAAkB;EAClB,sBAAsB;AACxB;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,kBAAkB;EAClB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,6BAA6B;EAC7B,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,mBAAmB;EACnB,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,eAAe;EACf,sBAAsB;EACtB,uBAAuB;AACzB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,uBAAuB;AACzB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,aAAa;EACb,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,uBAAuB;EACvB,aAAa;EACb,eAAe;EACf,SAAS;AACX;;AAEA;EACE,cAAc;EACd,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,6BAA6B;AAC/B","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n@media only screen and (max-width: 600px) {\n  * {\n    display: flex;\n    flex-wrap: wrap;\n  }\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #162e25;\n  margin-left: 50px;\n  background-color: #95BFA0;\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  height: 100%;\n  display: flex;\n  font-weight: bold;\n  font-size: 3rem;\n  padding: 5px;\n}\n\n.col {\n  padding: 10px;\n  margin: 10px;\n}\n\n.hero-image.card {\n  justify-items: start;\n  margin: 15px;\n  padding: 0;\n}\n\n.container {\n  flex-flow: column wrap;\n  flex-wrap: wrap;\n  display: flex;\n  margin-top: 12rem;\n  margin-left: 6rem;\n  width: 90%;\n  height: 31rem;\n  position: relative;\n  /* overflow: hidden; */\n}\n\n.card {\n  flex-wrap: wrap;\n  flex-flow: column;\n  padding: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 3rem;\n  margin-top: 6prem;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#landing {\n  font-weight: bold;\n  position: relative;\n  display: flex;\n}\n\n#landing.container {\n  align-items: center;\n  position: relative;\n  display: flex;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  flex-flow: column;\n  flex-wrap: wrap;\n  text-align-last: center;\n}\n\n#projectsCard  {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  margin-top: 6px;\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n\n\n\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

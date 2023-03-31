@@ -2,19 +2,9 @@
   font-family: "Montserrat", sans-serif !important;
 }
 @media only screen and (max-width: 600px) {
-  #landing {
+  * {
     display: flex;
     flex-wrap: wrap;
-  }
-  h1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 }
 
@@ -22,18 +12,45 @@ body {
   font-size: calc(10px + 2vmin);
   display: flex;
   color: #162e25;
-  margin-top: 200px;
+  margin-left: 50px;
   background-color: #95BFA0;
 }
 
-h1 {
-  min-height: 100vh;
+.hero.card {
+  flex-flow: column wrap;
+  height: 100%;
+  display: flex;
   font-weight: bold;
   font-size: 3rem;
+  padding: 5px;
+}
+
+.col {
+  padding: 10px;
   margin: 10px;
 }
 
+.hero-image.card {
+  justify-items: start;
+  margin: 15px;
+  padding: 0;
+}
+
+.container {
+  flex-flow: column wrap;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 12rem;
+  margin-left: 6rem;
+  width: 90%;
+  height: 31rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
 .card {
+  flex-wrap: wrap;
+  flex-flow: column;
   padding: 2rem 2rem;
   border: none;
   text-align-last: left;
@@ -41,7 +58,8 @@ h1 {
 }
 
 .card-title {
-  font-size: 50px;
+  font-size: 3rem;
+  margin-top: 6prem;
   margin-bottom: 1rem;
   background-color: transparent;
   color: #162e25;
@@ -58,36 +76,40 @@ h1 {
   background-color: #7A577A;
 }
 
-
 #landing {
   font-weight: bold;
-  padding: 50px;
   position: relative;
   display: flex;
 }
 
 #landing.container {
-  padding: 50px;
+  align-items: center;
   position: relative;
   display: flex;
 }
 
 #techCard {
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align-last: center;
 }
 
 #projectsContainer {
+  flex-flow: column;
+  flex-wrap: wrap;
   text-align-last: center;
-  padding-top: 10rem;
 }
 
 #projectsCard  {
+  flex-flow: column;
+  flex-wrap: wrap;
   padding: 1rem;
   margin: 0, 0, 0;
   align-items: center;
 }
 
 #projectsCardTitle {
+  margin-top: 6px;
   justify-content: center;
   padding: 1rem;
   font-size: 24px;

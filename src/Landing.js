@@ -17,33 +17,28 @@ const Landing = () => {
   return (
     <section id="landing">
       <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
-        <Container id="landing">
-          <Col>
-          <h1>
-            <Row>
-            Natalie DeYoung Ricci
-            </Row>
-            <Row>
-            Full Stack Software Engineer
-            </Row>
-            </h1>
-            </Col>
+        <Container className="landing">
+          <Row>
             <Col>
-            <Card>
-            <Image
-          className="hero"
-          src="/assets/hero.png"
-          width={200}
-          height={200}
-          alt="hero"
-          margin="5"
-          >
-          </Image>
-          </Card>
-</Col>
-
-          </Container>
-
+              <Card className="hero">
+                Natalie DeYoung Ricci
+                <p></p>
+                Full Stack Software Engineer
+              </Card>
+            </Col>
+            <Col xs={4} lg="1.5">
+              <Card className="hero-image">
+                <Image
+                  className="hero"
+                  src="/assets/hero.png"
+                  width={200}
+                  height={200}
+                  alt="hero"
+                ></Image>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </motion.div>
     </section>
   );
