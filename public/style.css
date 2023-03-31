@@ -1,8 +1,7 @@
 * {
   font-family: "Montserrat", sans-serif !important;
-  --text-base-size: 1em;
-  --text-scale-ratio: 1.2;
 }
+
 
 body {
   font-size: calc(10px + 2vmin);
@@ -12,12 +11,10 @@ body {
 }
 
 h1 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-style: bold;
+  font-weight: bold;
   font-size: 3rem;
 }
 
@@ -25,6 +22,10 @@ h1 {
   height: 10;
   width: 10;
 } */
+
+#landing {
+  font-weight: bold;
+}
 
 .card {
   padding: 9rem 9rem;
