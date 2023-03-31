@@ -1,5 +1,7 @@
 * {
   font-family: "Montserrat", sans-serif !important;
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
 }
 
 body {
@@ -15,11 +17,14 @@ h1 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-style: bold;
+  font-size: 3rem;
 }
 
-code {
-  font-family: "Montserrat", sans-serif;
-}
+/* .hero {
+  height: 10;
+  width: 10;
+} */
 
 .card {
   padding: 9rem 9rem;
