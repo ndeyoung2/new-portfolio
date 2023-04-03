@@ -56,8 +56,8 @@ const About = () => {
                 </p>
                 <p>
                   When I'm not coding, you can find me reading at the beach,
-                  hiking in the woods, baking bread in my flour-dusted kitchen,
-                  and creating in all kinds of ways.
+                  hiking in the woods, baking, creating, and scheming of ways to
+                  travel the globe.
                 </p>
               </Card.Body>
             </Card>
