@@ -49,7 +49,7 @@ const About = () => {
                 <p>
                   Most recently in higher education, I was a community college
                   English Professor and freelance writer and editor for over
-                  eight years before attending the Grace Hopper Program, which
+                  ten years before attending the Grace Hopper Program, which
                   gives me a lot of experience working with people, ideas, and
                   communication. I look forward to improving people's lives and
                   bettering the planet through technology.
