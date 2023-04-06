@@ -13,23 +13,47 @@ body {
   font-size: calc(10px + 2vmin);
   display: flex;
   color: #162e25;
+  padding: 0;
   margin-left: 50px;
   background-color: #95BFA0;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 2em auto;
 }
 
 .hero.card {
   flex-flow: column wrap;
   height: 100%;
   display: flex;
-  font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 5px;
 }
 
-.col {
+.hero.card-title.h5 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero.card-body {
+  font-size: rem;
+  font-weight: normal;
+  margin: 0px 0px 16px;
+  padding: 0;
+}
+
+
+/* .col {
+  flex-wrap: wrap;
+  flex: 2;
   padding: 10px;
   margin: 10px;
 }
+
+.col2 {
+  flex-wrap: wrap;
+  flex: 1;
+} */
 
 .hero-image.card {
   justify-items: start;
