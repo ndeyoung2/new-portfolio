@@ -7211,7 +7211,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Image.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -7251,19 +7250,7 @@ var Landing = function Landing() {
     className: "hero"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Title, null, "Natalie DeYoung Ricci"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
     className: "hero"
-  }, "Full Stack Software Engineer"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "col2",
-    xs: 4,
-    lg: "1.5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "hero-image"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: "hero",
-    src: "/assets/hero.png",
-    width: 200,
-    height: 200,
-    alt: "hero"
-  })))))));
+  }, "Full Stack Software Engineer")))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Landing);
 
@@ -7639,9 +7626,31 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n/*!\n * Bootstrap
 /*!****************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./public/style.css ***!
   \****************************************************************/
-/***/ (() => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nCssSyntaxError\n\n(154:2) /Users/nataliedeyoungricci/Documents/Coding/new-portfolio/public/style.css Unknown word\n\n \u001b[90m 152 | \u001b[39m\n \u001b[90m 153 | \u001b[39m\n\u001b[1m\u001b[31m>\u001b[39m\u001b[22m\u001b[90m 154 | \u001b[39m */\n \u001b[90m     | \u001b[39m \u001b[1m\u001b[31m^\u001b[39m\u001b[22m\n \u001b[90m 155 | \u001b[39m\n");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../public/assets/tunnel.jpg */ "./public/assets/tunnel.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\n@media only screen and (max-width: 600px) {\n  * {\n    display: flex;\n    flex-wrap: wrap;\n  }\n  .container { flex-wrap: wrap;  }\n  .landing-container { flex-wrap: wrap;  }\n\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #022326;\n  padding: 0;\n  margin-left: 50px;\n  /* background-color: #95BFA0; */\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  height: 100%;\n  display: flex;\n  font-size: 2rem;\n  padding: 5px;\n}\n\n.hero.card-title.h5 {\n  font-size: 3rem;\n  font-weight: bold;\n}\n.hero.card-body {\n  font-size: rem;\n  font-weight: normal;\n  margin: 0px 0px 16px;\n  padding: 0;\n}\n\n\n.col {\n  flex-wrap: wrap;\n  flex: 2;\n  padding: 10px;\n  margin: 10px;\n}\n\n.col2 {\n  flex-wrap: wrap;\n  flex: 1;\n}\n\n .hero-image.card {\n  justify-items: start;\n  margin: 15px;\n  padding: 0;\n}\n\n.container {\n  flex-flow: column wrap;\n  flex-wrap: wrap;\n  display: flex;\n  margin-top: 12rem;\n  margin-left: 6rem;\n  width: 90%;\n  height: 31rem;\n  position: relative;\n}\n\n.card {\n  flex-wrap: wrap;\n  flex-flow: column;\n  padding: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 3rem;\n  margin-top: 6prem;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#landing {\n  display: flex;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: cover;\n  background-position: center;\n  width: 100vw;\n  height: 100vh;\n}\n\n#landing.container {\n    font-weight: bold;\n  align-items: center;\n  position: relative;\n  display: flex;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  flex-flow: column;\n  flex-wrap: wrap;\n  text-align-last: center;\n}\n\n#projectsCard  {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  margin-top: 6px;\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;AAClD;;AAEA;EACE;IACE,aAAa;IACb,eAAe;EACjB;EACA,aAAa,eAAe,GAAG;EAC/B,qBAAqB,eAAe,GAAG;;AAEzC;;AAEA;EACE,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,UAAU;EACV,iBAAiB;EACjB,+BAA+B;AACjC;;AAEA;EACE,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,eAAe;EACf,YAAY;AACd;;AAEA;EACE,eAAe;EACf,iBAAiB;AACnB;AACA;EACE,cAAc;EACd,mBAAmB;EACnB,oBAAoB;EACpB,UAAU;AACZ;;;AAGA;EACE,eAAe;EACf,OAAO;EACP,aAAa;EACb,YAAY;AACd;;AAEA;EACE,eAAe;EACf,OAAO;AACT;;CAEC;EACC,oBAAoB;EACpB,YAAY;EACZ,UAAU;AACZ;;AAEA;EACE,sBAAsB;EACtB,eAAe;EACf,aAAa;EACb,iBAAiB;EACjB,iBAAiB;EACjB,UAAU;EACV,aAAa;EACb,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,kBAAkB;EAClB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,6BAA6B;EAC7B,cAAc;AAChB;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,yDAAkD;EAClD,sBAAsB;EACtB,2BAA2B;EAC3B,YAAY;EACZ,aAAa;AACf;;AAEA;IACI,iBAAiB;EACnB,mBAAmB;EACnB,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,eAAe;EACf,sBAAsB;EACtB,uBAAuB;AACzB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,uBAAuB;AACzB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,aAAa;EACb,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,uBAAuB;EACvB,aAAa;EACb,eAAe;EACf,SAAS;AACX;;AAEA;EACE,cAAc;EACd,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,6BAA6B;AAC/B","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n}\n\n@media only screen and (max-width: 600px) {\n  * {\n    display: flex;\n    flex-wrap: wrap;\n  }\n  .container { flex-wrap: wrap;  }\n  .landing-container { flex-wrap: wrap;  }\n\n}\n\nbody {\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #022326;\n  padding: 0;\n  margin-left: 50px;\n  /* background-color: #95BFA0; */\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  height: 100%;\n  display: flex;\n  font-size: 2rem;\n  padding: 5px;\n}\n\n.hero.card-title.h5 {\n  font-size: 3rem;\n  font-weight: bold;\n}\n.hero.card-body {\n  font-size: rem;\n  font-weight: normal;\n  margin: 0px 0px 16px;\n  padding: 0;\n}\n\n\n.col {\n  flex-wrap: wrap;\n  flex: 2;\n  padding: 10px;\n  margin: 10px;\n}\n\n.col2 {\n  flex-wrap: wrap;\n  flex: 1;\n}\n\n .hero-image.card {\n  justify-items: start;\n  margin: 15px;\n  padding: 0;\n}\n\n.container {\n  flex-flow: column wrap;\n  flex-wrap: wrap;\n  display: flex;\n  margin-top: 12rem;\n  margin-left: 6rem;\n  width: 90%;\n  height: 31rem;\n  position: relative;\n}\n\n.card {\n  flex-wrap: wrap;\n  flex-flow: column;\n  padding: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 3rem;\n  margin-top: 6prem;\n  margin-bottom: 1rem;\n  background-color: transparent;\n  color: #162e25;\n}\n\n.button {\n  background-color: #58592E;\n  border: none;\n  margin: .5rem;\n  color: #E6DBB0;\n}\n\n.button:hover {\n  background-color: #7A577A;\n}\n\n#landing {\n  display: flex;\n  background-image: url(\"/public/assets/tunnel.jpg\");\n  background-size: cover;\n  background-position: center;\n  width: 100vw;\n  height: 100vh;\n}\n\n#landing.container {\n    font-weight: bold;\n  align-items: center;\n  position: relative;\n  display: flex;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  flex-flow: column;\n  flex-wrap: wrap;\n  text-align-last: center;\n}\n\n#projectsCard  {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding: 1rem;\n  margin: 0, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle {\n  margin-top: 6px;\n  justify-content: center;\n  padding: 1rem;\n  font-size: 24px;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
 
 /***/ }),
 
@@ -7665,7 +7674,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7A577A;\n}\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,WAAW;EACX,UAAU;EACV,2BAA2B;EAC3B,YAAY;EACZ,sBAAsB;EACtB,6BAA6B;EAC7B,0BAA0B;AAC5B;;AAEA;EACE,qBAAqB;AACvB;;CAEC;EACC,kBAAkB;EAClB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #58592E;\n}\n\n.nav-link:hover {\n  color: #7A577A;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #594B41;\n}\n\n.nav-link:hover {\n  color: #436573;\n}\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,WAAW;EACX,UAAU;EACV,2BAA2B;EAC3B,YAAY;EACZ,sBAAsB;EACtB,6BAA6B;EAC7B,0BAA0B;AAC5B;;AAEA;EACE,qBAAqB;AACvB;;CAEC;EACC,kBAAkB;EAClB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #594B41;\n}\n\n.nav-link:hover {\n  color: #436573;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -52281,6 +52290,17 @@ module.exports = "data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%
 
 /***/ }),
 
+/***/ "./public/assets/tunnel.jpg":
+/*!**********************************!*\
+  !*** ./public/assets/tunnel.jpg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "02e3c9234cd2a734f09e.jpg";
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -67218,6 +67238,26 @@ function useInView({
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

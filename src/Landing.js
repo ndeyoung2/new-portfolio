@@ -18,26 +18,14 @@ const Landing = () => {
     <section id="landing">
       <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
         <Container className="landing">
+
           <Row>
             <Col className="col">
               <Card className="hero">
-                <Card.Title>
-                Natalie DeYoung Ricci
-                </Card.Title>
+                <Card.Title>Natalie DeYoung Ricci</Card.Title>
                 <Card.Body className="hero">
-                Full Stack Software Engineer
+                  Full Stack Software Engineer
                 </Card.Body>
-              </Card>
-            </Col>
-            <Col className="col2" xs={4} lg="1.5">
-              <Card className="hero-image">
-                <Image
-                  className="hero"
-                  src="/assets/hero.png"
-                  width={200}
-                  height={200}
-                  alt="hero"
-                ></Image>
               </Card>
             </Col>
           </Row>

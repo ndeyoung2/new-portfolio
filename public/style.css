@@ -7,20 +7,18 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .container { flex-wrap: wrap;  }
+  .landing-container { flex-wrap: wrap;  }
+
 }
 
-/* body {
+body {
   font-size: calc(10px + 2vmin);
   display: flex;
-  color: #162e25;
+  color: #022326;
   padding: 0;
   margin-left: 50px;
-  background-color: #95BFA0;
-}
-
-.wrapper {
-  max-width: 960px;
-  margin: 2em auto;
+  /* background-color: #95BFA0; */
 }
 
 .hero.card {
@@ -43,7 +41,7 @@
 }
 
 
-/* .col {
+.col {
   flex-wrap: wrap;
   flex: 2;
   padding: 10px;
@@ -53,9 +51,9 @@
 .col2 {
   flex-wrap: wrap;
   flex: 1;
-} */
+}
 
-.hero-image.card {
+ .hero-image.card {
   justify-items: start;
   margin: 15px;
   padding: 0;
@@ -70,7 +68,6 @@
   width: 90%;
   height: 31rem;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .card {
@@ -102,12 +99,16 @@
 }
 
 #landing {
-  font-weight: bold;
-  position: relative;
   display: flex;
+  background-image: url("/public/assets/tunnel.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 #landing.container {
+    font-weight: bold;
   align-items: center;
   position: relative;
   display: flex;
@@ -148,7 +149,3 @@
   border: none;
   background-color: transparent;
 }
-
-
-
- */
