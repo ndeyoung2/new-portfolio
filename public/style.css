@@ -15,10 +15,10 @@
 body {
   font-size: calc(10px + 2vmin);
   display: flex;
-  color: #022326;
+  color: #314649;
   padding: 0;
   margin-left: 50px;
-  /* background-color: #95BFA0; */
+  background-color: #CFCCD9;
 }
 
 .hero.card {
@@ -26,7 +26,7 @@ body {
   height: 100%;
   display: flex;
   font-size: 2rem;
-  padding: 5px;
+  padding: 10px;
 }
 
 .hero.card-title.h5 {
@@ -40,8 +40,7 @@ body {
   padding: 0;
 }
 
-
-.col {
+/* .col {
   flex-wrap: wrap;
   flex: 2;
   padding: 10px;
@@ -51,7 +50,7 @@ body {
 .col2 {
   flex-wrap: wrap;
   flex: 1;
-}
+} */
 
  .hero-image.card {
   justify-items: start;
@@ -84,23 +83,23 @@ body {
   margin-top: 6prem;
   margin-bottom: 1rem;
   background-color: transparent;
-  color: #162e25;
+  /* color: #162e25; */
 }
 
 .button {
-  background-color: #58592E;
+  background-color: #928076;
   border: none;
   margin: .5rem;
-  color: #E6DBB0;
+  color: #D0B099;
 }
 
 .button:hover {
-  background-color: #7A577A;
+  background-color: #5B98A6;
 }
 
 #landing {
   display: flex;
-  background-image: url("/public/assets/tunnel.jpg");
+  background-image: url("/public/assets/tim-marshall-QfEfkWk1Uhk-unsplash.jpg");
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -108,7 +107,7 @@ body {
 }
 
 #landing.container {
-    font-weight: bold;
+  font-weight: bold;
   align-items: center;
   position: relative;
   display: flex;
