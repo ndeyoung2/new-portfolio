@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { Form, Card, Row, Button, Container } from "react-bootstrap";
+import { Form, Card, Row, Button, Col, Container } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -91,6 +91,7 @@ const Contact = () => {
                       }}
                     >
                       <Form.Label column="lg">Your Name</Form.Label>
+                      <Col className="form">
                       <Form.Control
                         name="name"
                         id="name"
@@ -106,6 +107,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                       />
+                      </Col>
                     </Row>
                   </Form.Group>
                   <Form.Group>
@@ -116,6 +118,7 @@ const Contact = () => {
                       }}
                     >
                       <Form.Label column="lg">Your Email</Form.Label>
+                      <Col className="form">
                       <Form.Control
                         name="email"
                         id="email"
@@ -131,6 +134,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                       />
+                      </Col>
                     </Row>
                   </Form.Group>
                   <Form.Group>
@@ -140,6 +144,7 @@ const Contact = () => {
                       }}
                     >
                       <Form.Label column="lg">Your Message</Form.Label>
+                      <Col className="form">
                       <Form.Control
                         as="textarea"
                         name="message"
@@ -155,9 +160,11 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                       />
+                      </Col>
                     </Row>
                   </Form.Group>
                   <Row style={{ padding: 1 }}>
+                    <Col>
                     <Button
                       id="button"
                       className="button"
@@ -169,6 +176,7 @@ const Contact = () => {
                     >
                       Sumbit
                     </Button>
+                    </Col>
                   </Row>
                 </Form>
               </Card.Body>

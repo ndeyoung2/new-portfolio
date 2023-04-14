@@ -7,96 +7,105 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .container { flex-wrap: wrap;  }
-  .landing-container { flex-wrap: wrap;  }
-
+  .container {
+    flex-wrap: wrap;
+  }
 }
 
 body {
   font-size: calc(10px + 2vmin);
   display: flex;
-  color: #314649;
+  color: #2C3B38;
   padding: 0;
-  background-color: #CFCCD9;
-}
-
-.hero.card {
-  flex-flow: column wrap;
-  height: 100%;
-  display: flex;
-  font-size: 2rem;
-  padding: 10px;
-}
-
-.hero.card-title.h5 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-.hero.card-body {
-  font-size: rem;
-  font-weight: normal;
-  margin: 0px 0px 16px;
-  padding: 0;
-}
-
- .hero-image.card {
-  justify-items: start;
-  margin: 15px;
-  padding: 0;
+  background-color: #CACDDE;
 }
 
 .container {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 6rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   flex-flow: column wrap;
   flex-wrap: wrap;
   display: flex;
-  margin-top: 12rem;
-  margin-left: 6rem;
-  width: 90%;
-  height: 31rem;
   position: relative;
 }
 
 .card {
   flex-wrap: wrap;
-  flex-flow: column;
   padding: 2rem 2rem;
+  margin: 2rem 2rem;
   border: none;
   text-align-last: left;
   background-color: transparent;
 }
 
 .card-title {
-  font-size: 3rem;
-  margin-top: 6rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   background-color: transparent;
 }
 
 .button {
-  background-color: #927452;
+  background-color: #594B41;
   border: none;
-  margin: .5rem;
-  color: #E4C7C1;
+  margin: 0.5rem;
+  color: #F5EED7;
 }
 
 .button:hover {
-  background-color: #5B98A6;
+  background-color: #5b98a6;
 }
 
-#landing {
+.vstack {
+  position: relative;
   display: flex;
-  background-image: url("/public/assets/tim-marshall-QfEfkWk1Uhk-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
   width: 100vw;
   height: 100vh;
 }
 
-#landing.container {
-  font-weight: bold;
-  align-items: center;
-  position: relative;
+.vstack::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+  background-image: url("/public/assets/spray.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero.card {
+  flex-flow: column wrap;
   display: flex;
+  font-size: 2rem;
+  padding: 4rem;
+}
+
+.hero-title.card-title {
+  padding-top: 8rem;
+  padding-left: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-body.card-body {
+  font-size: 3rem;
+  padding-left: 4rem;
+  font-weight: normal;
+}
+
+.form.col {
+  flex-grow: 2;
 }
 
 #techCard {
@@ -111,19 +120,21 @@ body {
   text-align-last: center;
 }
 
-#projectsCard  {
+#projectsCard {
   flex-flow: column;
   flex-wrap: wrap;
-  padding: 1rem;
-  margin: 0, 0, 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 1rem, 0, 0;
   align-items: center;
 }
 
-#projectsCardTitle {
-  margin-top: 6px;
+#projectsCardTitle.card-title {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
   justify-content: center;
-  padding: 1rem;
-  font-size: 24px;
   margin: 0;
 }
 

@@ -48,11 +48,11 @@ const About = () => {
                 </p>
                 <p>
                   Most recently in higher education, I was a community college
-                  English Professor and freelance writer and editor for over
-                  ten years before attending the Grace Hopper Program, which
-                  gives me a lot of experience working with people, ideas, and
-                  communication. I look forward to improving people's lives and
-                  bettering the planet through technology.
+                  English Professor and freelance writer and editor for over ten
+                  years before becoming a developer, which gives me a rich
+                  background working with people, ideas, and communication. I
+                  look forward to using these skills to improving people's lives
+                  and better the planet through technology.
                 </p>
                 <p>
                   When I'm not coding, you can find me reading at the beach,
