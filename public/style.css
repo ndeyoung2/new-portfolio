@@ -39,18 +39,6 @@ body {
   padding: 0;
 }
 
-/* .col {
-  flex-wrap: wrap;
-  flex: 2;
-  padding: 10px;
-  margin: 10px;
-}
-
-.col2 {
-  flex-wrap: wrap;
-  flex: 1;
-} */
-
  .hero-image.card {
   justify-items: start;
   margin: 15px;
@@ -79,17 +67,16 @@ body {
 
 .card-title {
   font-size: 3rem;
-  margin-top: 6prem;
+  margin-top: 6rem;
   margin-bottom: 1rem;
   background-color: transparent;
-  /* color: #162e25; */
 }
 
 .button {
-  background-color: #928076;
+  background-color: #927452;
   border: none;
   margin: .5rem;
-  color: #D0B099;
+  color: #E4C7C1;
 }
 
 .button:hover {
