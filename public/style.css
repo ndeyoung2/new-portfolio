@@ -2,20 +2,17 @@
   font-family: "Montserrat", sans-serif !important;
 }
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
-
 @media only screen and (max-width: 600px) {
   * {
     display: flex;
     flex-wrap: wrap;
   }
-  html {
+  /* html {
     height: 100%;
   }
   body {
+    display: block;
+    text-align: center;
     width: 600px;
     height: inherit;
     margin: 0 auto;
@@ -25,7 +22,11 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  }
+  } */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

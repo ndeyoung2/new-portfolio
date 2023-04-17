@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useInView, useAnimate } from "framer-motion";
-import { Stack, Card } from "react-bootstrap";
+import { Stack, Row, Col, Card } from "react-bootstrap";
 
 const Landing = () => {
   const [scope, animate] = useAnimate();
@@ -26,7 +26,6 @@ const Landing = () => {
               Full Stack Software Engineer
             </Card.Body>
           </Card>{" "}
-          d
         </Stack>
       </motion.div>
     </section>

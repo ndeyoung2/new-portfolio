@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Card, Button, Container } from "react-bootstrap";
+import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import { useAnimate, motion, useInView } from "framer-motion";
 
 const Tech = () => {
@@ -37,6 +37,8 @@ const Tech = () => {
     <>
       <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.1 }}>
         <Container>
+          <Row>
+            <Col>
           <Card id="techCard">
             <Card.Title id="tech">Tools and Tech Stack</Card.Title>
             <Card.Body justify-content="center">
@@ -53,6 +55,8 @@ const Tech = () => {
               </Card.Text>
             </Card.Body>
           </Card>
+          </Col>
+          </Row>
         </Container>
       </motion.div>
     </>

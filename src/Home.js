@@ -12,6 +12,7 @@ import Projects from "./Projects";
 const Home = () => {
   return (
     <BrowserRouter>
+
       <section id="navbar">
         <TopNav />
       </section>

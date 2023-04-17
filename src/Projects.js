@@ -23,6 +23,7 @@ const Projects = () => {
             <Row>
               <Card.Title>Projects</Card.Title>
             </Row>
+            <Row>
             <Col>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -97,7 +98,33 @@ const Projects = () => {
                   </Figure>
                 </Card>
               </motion.div>
-            </Col>
+              </Col>
+              <Col>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10,
+                }}
+              >
+                <Card.Title id="projectsCardTitle">Portfolio</Card.Title>
+                <Card
+                  id="projectsCard"
+                  as={Link}
+                  to="https://github.com/ndeyoung2/new-portfolio"
+                  style={{ justifyContent: "center" }}
+                >
+                  <Figure>
+                    <Figure.Image
+                      width={300}
+                      src="assets/spray.jpg"
+                    ></Figure.Image>
+                  </Figure>
+                </Card>
+              </motion.div>
+              </Col>
+              </Row>
           </Row>
         </Container>
       </motion.div>
