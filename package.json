@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node server",
     "build": "webpack",
-    "start:dev": "npm run build -- --watch --mode=development",
+    "start:dev": "node server & npm run build -- --watch --mode=development",
     "build:dev": "webpack & --watch --mode=development",
     "build-watch": "webpack -w"
   },
