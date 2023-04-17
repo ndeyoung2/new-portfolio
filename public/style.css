@@ -1,32 +1,7 @@
 * {
   font-family: "Montserrat", sans-serif !important;
-}
-
-@media only screen and (max-width: 600px) {
-  * {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /* html {
-    height: 100%;
-  }
-  body {
-    display: block;
-    text-align: center;
-    width: 600px;
-    height: inherit;
-    margin: 0 auto;
-
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  } */
-}
-
-html {
-  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -49,7 +24,6 @@ body {
   padding-top: 3rem;
   padding-bottom: 6rem;
   flex-flow: column wrap;
-  flex-wrap: wrap;
   display: flex;
   position: relative;
 }
@@ -136,8 +110,6 @@ body {
 }
 
 #projectsContainer {
-  /* flex-flow: column;
-  flex-wrap: wrap; */
   text-align-last: center;
 }
 
