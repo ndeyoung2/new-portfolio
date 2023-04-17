@@ -1,7 +1,8 @@
 @media only screen and (max-width: 600px) {
   * {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
+    display: block;
   }
   html {
     height: 100%;
