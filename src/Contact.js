@@ -174,7 +174,7 @@ const Contact = () => {
                         height: 50,
                       }}
                     >
-                      Sumbit
+                      Submit
                     </Button>
                     </Col>
                   </Row>

@@ -7088,7 +7088,7 @@ var Contact = function Contact() {
       width: 75,
       height: 50
     }
-  }, "Sumbit"))))))))));
+  }, "Submit"))))))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
 
