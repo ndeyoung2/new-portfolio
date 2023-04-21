@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Contact from "./Contact";
 import Tech from "./Tech";
 import Projects from "./Projects";
+import Writing from "./Writing";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <HashLink smooth to="/#about"></HashLink>
         <HashLink smooth to="/#tech"></HashLink>
         <HashLink smooth to="/#projects"></HashLink>
+        <HashLink smooth to="/#writing"></HashLink>
         <HashLink smooth to="/#contact"></HashLink>
       </nav>
 
@@ -34,6 +36,8 @@ const Home = () => {
       <section id="tech">{<Tech />}</section>
 
       <section id="projects">{<Projects />}</section>
+
+      <section id="projects">{<Writing />}</section>
 
       <section id="contact">{<Contact />}</section>
 
