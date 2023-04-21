@@ -1,4 +1,4 @@
-# Natalie's Portfolio
+# Natalie Ricci's Portfolio
 
 To get started, run the command:
 
