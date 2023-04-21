@@ -1,4 +1,4 @@
-# New Portfolio
+# Natalie's Portfolio
 
 To get started, run the command:
 
