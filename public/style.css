@@ -119,17 +119,17 @@ body {
 }
 
 #projectsContainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
   text-align-last: center;
 }
 
 #projectsCard {
-  flex-flow: column;
-  flex-wrap: wrap;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
   margin: 1rem, 0, 0;
-  align-items: center;
 }
 
 #projectsCardTitle.card-title {
@@ -141,17 +141,18 @@ body {
 }
 
 #writingContainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
   text-align-last: center;
 }
 
 #writingCard {
-  flex-flow: column;
-  flex-wrap: wrap;
+  align-items: center;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
   margin: 1rem, 0, 0;
-  align-items: center;
 }
 
 #writingTitle.card-title {
