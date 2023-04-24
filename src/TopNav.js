@@ -8,6 +8,11 @@ const TopNav = () => {
     <>
       <Nav className="topnav" id="navbar" variant="pills">
         <Navbar expand="lg">
+        <Nav.Item className="nav-item">
+            <Nav.Link href="https://github.com/ndeyoung2"
+            svg= "bootstrap-icons/icons/git.svg"
+            ></Nav.Link>
+          </Nav.Item>
           <Nav.Item className="nav-item">
             <Nav.Link href="/">Home</Nav.Link>
           </Nav.Item>
