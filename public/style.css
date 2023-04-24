@@ -131,6 +131,29 @@ body {
   margin: 0;
 }
 
+#writingContainer {
+  text-align-last: center;
+}
+
+#writingCard {
+  flex-flow: column;
+  flex-wrap: wrap;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 1rem, 0, 0;
+  align-items: center;
+}
+
+#writingTitle.card-title {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  justify-content: center;
+  margin: 0;
+  color: #2C3B38;
+}
+
 #contact {
   padding-top: 0;
   height: 75rem;

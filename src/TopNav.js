@@ -20,6 +20,9 @@ const TopNav = () => {
           <Nav.Item className="nav-item" >
             <Nav.Link href="#projects">Projects</Nav.Link>
           </Nav.Item>
+          <Nav.Item className="nav-item">
+            <Nav.Link href="#writing">Writing</Nav.Link>
+          </Nav.Item>
           <Nav.Item className="nav-item" >
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav.Item>

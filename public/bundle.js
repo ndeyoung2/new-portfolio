@@ -7140,8 +7140,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/dist/react-router-hash-link.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-hash-link */ "./node_modules/react-router-hash-link/dist/react-router-hash-link.esm.js");
 /* harmony import */ var _Landing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Landing */ "./src/Landing.js");
 /* harmony import */ var _TopNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TopNav */ "./src/TopNav.js");
 /* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./About */ "./src/About.js");
@@ -7149,6 +7149,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Contact */ "./src/Contact.js");
 /* harmony import */ var _Tech__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Tech */ "./src/Tech.js");
 /* harmony import */ var _Projects__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Projects */ "./src/Projects.js");
+/* harmony import */ var _Writing__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Writing */ "./src/Writing.js");
+
 
 
 
@@ -7160,24 +7162,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "navbar"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_TopNav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_9__.HashLink, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_TopNav__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__.HashLink, {
     smooth: true,
     to: "/"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_9__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__.HashLink, {
     smooth: true,
     to: "/#home"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_9__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__.HashLink, {
     smooth: true,
     to: "/#about"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_9__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__.HashLink, {
     smooth: true,
     to: "/#tech"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_9__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__.HashLink, {
     smooth: true,
     to: "/#projects"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_9__.HashLink, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__.HashLink, {
+    smooth: true,
+    to: "/#writing"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_hash_link__WEBPACK_IMPORTED_MODULE_10__.HashLink, {
     smooth: true,
     to: "/#contact"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
@@ -7189,6 +7194,8 @@ var Home = function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Tech__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "projects"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Projects__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "writing"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Writing__WEBPACK_IMPORTED_MODULE_8__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "contact"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Contact__WEBPACK_IMPORTED_MODULE_5__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "footer"
@@ -7510,10 +7517,92 @@ var TopNav = function TopNav() {
   }, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
+    href: "#writing"
+  }, "Writing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#contact"
   }, "Contact")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TopNav);
+
+/***/ }),
+
+/***/ "./src/Writing.js":
+/*!************************!*\
+  !*** ./src/Writing.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/Figure.js");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/utils/use-in-view.mjs");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/dom/motion.mjs");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var Tech = function Tech() {
+  var _useAnimate = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useAnimate)(),
+    _useAnimate2 = _slicedToArray(_useAnimate, 2),
+    scope = _useAnimate2[0],
+    animate = _useAnimate2[1];
+  var ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var isInView = (0,framer_motion__WEBPACK_IMPORTED_MODULE_2__.useInView)(ref);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (isInView) {
+      animate(scope.current, {
+        scale: 1.1,
+        delay: 0.5
+      });
+    }
+  }, [isInView]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    ref: scope
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    id: "writingContainer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+    classID: "writing"
+  }, "Writing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+    whileHover: {
+      scale: 1.05
+    },
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 10
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"].Title, {
+    id: "writingTitle"
+  }, "Language Models in Machine Learning: A Brief Guide"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    id: "writingCard",
+    as: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
+    to: "https://medium.com/@ndeyoung/language-models-in-machine-learning-a-brief-guide-1fa337dd43ac"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"].Image, {
+    width: 300,
+    height: 200,
+    src: "assets/nodes.png"
+  }))))))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tech);
 
 /***/ }),
 
@@ -7673,7 +7762,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #2C3B38;\n  padding: 0;\n  background-color: #CACDDE;\n}\n\n.container {\n  width: 100vw;\n  height: 100vh;\n  margin-bottom: 6rem;\n  margin-top: 3rem;\n  padding-top: 3rem;\n  padding-bottom: 6rem;\n  flex-flow: column wrap;\n  display: flex;\n  position: relative;\n}\n\n.card {\n  flex-wrap: wrap;\n  padding: 2rem 2rem;\n  margin: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 4rem;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  background-color: transparent;\n}\n\n.button {\n  background-color: #594B41;\n  border: none;\n  margin: 0.5rem;\n  color: #F5EED7;\n}\n\n.button:hover {\n  background-color: #5b98a6;\n}\n\n.vstack {\n  position: relative;\n  display: flex;\n  width: 100vw;\n  height: 100vh;\n}\n\n.vstack::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  opacity: 0.4;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  display: flex;\n  font-size: 2rem;\n  padding: 4rem;\n}\n\n.hero-title.card-title {\n  padding-top: 8rem;\n  padding-left: 4rem;\n  margin-top: 3rem;\n  margin-bottom: 1rem;\n  font-size: 4rem;\n  font-weight: bold;\n}\n\n.hero-body.card-body {\n  font-size: 3rem;\n  padding-left: 4rem;\n  font-weight: normal;\n}\n\n.form.col {\n  flex-grow: 2;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding-top: 0;\n  padding-left: 0;\n  padding-right: 0;\n  margin: 1rem, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle.card-title {\n  font-size: 2rem;\n  padding-top: 1rem;\n  padding-bottom: 0;\n  justify-content: center;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;EAChD,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,eAAe;EACf,sBAAsB;EACtB,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,iBAAiB;EACjB,oBAAoB;EACpB,sBAAsB;EACtB,aAAa;EACb,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,iBAAiB;EACjB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,cAAc;EACd,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,WAAW;EACX,cAAc;EACd,kBAAkB;EAClB,QAAQ;EACR,UAAU;EACV,WAAW;EACX,SAAS;EACT,YAAY;EACZ,yDAAiD;EACjD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA;EACE,sBAAsB;EACtB,aAAa;EACb,eAAe;EACf,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,eAAe;EACf,sBAAsB;EACtB,uBAAuB;AACzB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,iBAAiB;EACjB,uBAAuB;EACvB,SAAS;AACX;;AAEA;EACE,cAAc;EACd,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,6BAA6B;AAC/B","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #2C3B38;\n  padding: 0;\n  background-color: #CACDDE;\n}\n\n.container {\n  width: 100vw;\n  height: 100vh;\n  margin-bottom: 6rem;\n  margin-top: 3rem;\n  padding-top: 3rem;\n  padding-bottom: 6rem;\n  flex-flow: column wrap;\n  display: flex;\n  position: relative;\n}\n\n.card {\n  flex-wrap: wrap;\n  padding: 2rem 2rem;\n  margin: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 4rem;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  background-color: transparent;\n}\n\n.button {\n  background-color: #594B41;\n  border: none;\n  margin: 0.5rem;\n  color: #F5EED7;\n}\n\n.button:hover {\n  background-color: #5b98a6;\n}\n\n.vstack {\n  position: relative;\n  display: flex;\n  width: 100vw;\n  height: 100vh;\n}\n\n.vstack::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  opacity: 0.4;\n  background-image: url(\"/public/assets/spray.jpg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  display: flex;\n  font-size: 2rem;\n  padding: 4rem;\n}\n\n.hero-title.card-title {\n  padding-top: 8rem;\n  padding-left: 4rem;\n  margin-top: 3rem;\n  margin-bottom: 1rem;\n  font-size: 4rem;\n  font-weight: bold;\n}\n\n.hero-body.card-body {\n  font-size: 3rem;\n  padding-left: 4rem;\n  font-weight: normal;\n}\n\n.form.col {\n  flex-grow: 2;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding-top: 0;\n  padding-left: 0;\n  padding-right: 0;\n  margin: 1rem, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle.card-title {\n  font-size: 2rem;\n  padding-top: 1rem;\n  padding-bottom: 0;\n  justify-content: center;\n  margin: 0;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  font-family: \"Montserrat\", sans-serif !important;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #2C3B38;\n  padding: 0;\n  background-color: #CACDDE;\n}\n\n.container {\n  width: 100vw;\n  height: 100vh;\n  margin-bottom: 6rem;\n  margin-top: 3rem;\n  padding-top: 3rem;\n  padding-bottom: 6rem;\n  flex-flow: column wrap;\n  display: flex;\n  position: relative;\n}\n\n.card {\n  flex-wrap: wrap;\n  padding: 2rem 2rem;\n  margin: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 4rem;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  background-color: transparent;\n}\n\n.button {\n  background-color: #594B41;\n  border: none;\n  margin: 0.5rem;\n  color: #F5EED7;\n}\n\n.button:hover {\n  background-color: #5b98a6;\n}\n\n.vstack {\n  position: relative;\n  display: flex;\n  width: 100vw;\n  height: 100vh;\n}\n\n.vstack::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  opacity: 0.4;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  display: flex;\n  font-size: 2rem;\n  padding: 4rem;\n}\n\n.hero-title.card-title {\n  padding-top: 8rem;\n  padding-left: 4rem;\n  margin-top: 3rem;\n  margin-bottom: 1rem;\n  font-size: 4rem;\n  font-weight: bold;\n}\n\n.hero-body.card-body {\n  font-size: 3rem;\n  padding-left: 4rem;\n  font-weight: normal;\n}\n\n.form.col {\n  flex-grow: 2;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding-top: 0;\n  padding-left: 0;\n  padding-right: 0;\n  margin: 1rem, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle.card-title {\n  font-size: 2rem;\n  padding-top: 1rem;\n  padding-bottom: 0;\n  justify-content: center;\n  margin: 0;\n}\n\n#writingContainer {\n  text-align-last: center;\n}\n\n#writingCard {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding-top: 0;\n  padding-left: 0;\n  padding-right: 0;\n  margin: 1rem, 0, 0;\n  align-items: center;\n}\n\n#writingTitle.card-title {\n  font-size: 2rem;\n  padding-top: 1rem;\n  padding-bottom: 0;\n  justify-content: center;\n  margin: 0;\n  color: #2C3B38;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n", "",{"version":3,"sources":["webpack://./public/style.css"],"names":[],"mappings":"AAAA;EACE,gDAAgD;EAChD,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,eAAe;EACf,sBAAsB;EACtB,kBAAkB;EAClB,6BAA6B;EAC7B,aAAa;EACb,cAAc;EACd,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,iBAAiB;EACjB,oBAAoB;EACpB,sBAAsB;EACtB,aAAa;EACb,kBAAkB;AACpB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,iBAAiB;EACjB,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,mBAAmB;EACnB,6BAA6B;AAC/B;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,cAAc;EACd,cAAc;AAChB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,WAAW;EACX,cAAc;EACd,kBAAkB;EAClB,QAAQ;EACR,UAAU;EACV,WAAW;EACX,SAAS;EACT,YAAY;EACZ,yDAAiD;EACjD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;AAC7B;;AAEA;EACE,sBAAsB;EACtB,aAAa;EACb,eAAe;EACf,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,eAAe;EACf,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,eAAe;EACf,sBAAsB;EACtB,uBAAuB;AACzB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,iBAAiB;EACjB,uBAAuB;EACvB,SAAS;AACX;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,iBAAiB;EACjB,eAAe;EACf,cAAc;EACd,eAAe;EACf,gBAAgB;EAChB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,iBAAiB;EACjB,uBAAuB;EACvB,SAAS;EACT,cAAc;AAChB;;AAEA;EACE,cAAc;EACd,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,6BAA6B;AAC/B","sourcesContent":["* {\n  font-family: \"Montserrat\", sans-serif !important;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  position: relative;\n  font-size: calc(10px + 2vmin);\n  display: flex;\n  color: #2C3B38;\n  padding: 0;\n  background-color: #CACDDE;\n}\n\n.container {\n  width: 100vw;\n  height: 100vh;\n  margin-bottom: 6rem;\n  margin-top: 3rem;\n  padding-top: 3rem;\n  padding-bottom: 6rem;\n  flex-flow: column wrap;\n  display: flex;\n  position: relative;\n}\n\n.card {\n  flex-wrap: wrap;\n  padding: 2rem 2rem;\n  margin: 2rem 2rem;\n  border: none;\n  text-align-last: left;\n  background-color: transparent;\n}\n\n.card-title {\n  font-size: 4rem;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  background-color: transparent;\n}\n\n.button {\n  background-color: #594B41;\n  border: none;\n  margin: 0.5rem;\n  color: #F5EED7;\n}\n\n.button:hover {\n  background-color: #5b98a6;\n}\n\n.vstack {\n  position: relative;\n  display: flex;\n  width: 100vw;\n  height: 100vh;\n}\n\n.vstack::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  bottom: 0px;\n  left: 0px;\n  opacity: 0.4;\n  background-image: url(\"/public/assets/spray.jpg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n\n.hero.card {\n  flex-flow: column wrap;\n  display: flex;\n  font-size: 2rem;\n  padding: 4rem;\n}\n\n.hero-title.card-title {\n  padding-top: 8rem;\n  padding-left: 4rem;\n  margin-top: 3rem;\n  margin-bottom: 1rem;\n  font-size: 4rem;\n  font-weight: bold;\n}\n\n.hero-body.card-body {\n  font-size: 3rem;\n  padding-left: 4rem;\n  font-weight: normal;\n}\n\n.form.col {\n  flex-grow: 2;\n}\n\n#techCard {\n  flex-wrap: wrap;\n  flex-direction: column;\n  text-align-last: center;\n}\n\n#projectsContainer {\n  text-align-last: center;\n}\n\n#projectsCard {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding-top: 0;\n  padding-left: 0;\n  padding-right: 0;\n  margin: 1rem, 0, 0;\n  align-items: center;\n}\n\n#projectsCardTitle.card-title {\n  font-size: 2rem;\n  padding-top: 1rem;\n  padding-bottom: 0;\n  justify-content: center;\n  margin: 0;\n}\n\n#writingContainer {\n  text-align-last: center;\n}\n\n#writingCard {\n  flex-flow: column;\n  flex-wrap: wrap;\n  padding-top: 0;\n  padding-left: 0;\n  padding-right: 0;\n  margin: 1rem, 0, 0;\n  align-items: center;\n}\n\n#writingTitle.card-title {\n  font-size: 2rem;\n  padding-top: 1rem;\n  padding-bottom: 0;\n  justify-content: center;\n  margin: 0;\n  color: #2C3B38;\n}\n\n#contact {\n  padding-top: 0;\n  height: 75rem;\n  width: 60rem;\n  border: none;\n  background-color: transparent;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

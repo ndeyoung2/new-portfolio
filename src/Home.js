@@ -37,7 +37,7 @@ const Home = () => {
 
       <section id="projects">{<Projects />}</section>
 
-      <section id="projects">{<Writing />}</section>
+      <section id="writing">{<Writing />}</section>
 
       <section id="contact">{<Contact />}</section>
 
