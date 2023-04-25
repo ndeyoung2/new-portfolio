@@ -25,31 +25,31 @@ const Tech = () => {
             </Row>
             <Row>
               <Col>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 10,
-                }}
-              >
-                <Card.Title id="writingTitle">
-                  Language Models in Machine Learning: A Brief Guide
-                </Card.Title>
-                <Card
-                  id="writingCard"
-                  as={Link}
-                  to="https://medium.com/@ndeyoung/language-models-in-machine-learning-a-brief-guide-1fa337dd43ac"
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 10,
+                  }}
                 >
-                  <Figure>
-                    <Figure.Image
-                      width={300}
-                      height={200}
-                      src="assets/nodes.png"
-                    ></Figure.Image>
-                  </Figure>
-                </Card>
-              </motion.div>
+                  <Card.Title id="writingTitle">
+                    Language Models in Machine Learning: A Brief Guide
+                  </Card.Title>
+                  <Card
+                    id="writingCard"
+                    as={Link}
+                    to="https://medium.com/@ndeyoung/language-models-in-machine-learning-a-brief-guide-1fa337dd43ac"
+                  >
+                    <Figure>
+                      <Figure.Image
+                        width={300}
+                        height={200}
+                        src="assets/nodes.png"
+                      ></Figure.Image>
+                    </Figure>
+                  </Card>
+                </motion.div>
               </Col>
             </Row>
           </Row>
