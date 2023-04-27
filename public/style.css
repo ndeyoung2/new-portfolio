@@ -11,9 +11,9 @@ body {
   position: relative;
   font-size: calc(10px + 2vmin);
   display: flex;
-  color: #2C3B38;
+  color: #2c3b38;
   padding: 0;
-  background-color: #CACDDE;
+  background-color: #cacdde;
 }
 
 .container {
@@ -45,10 +45,10 @@ body {
 }
 
 .button {
-  background-color: #594B41;
+  background-color: #594b41;
   border: none;
   margin: 0.5rem;
-  color: #F5EED7;
+  color: #f5eed7;
 }
 
 .button:hover {
@@ -56,7 +56,8 @@ body {
 }
 
 .icon {
-  filter: invert(27%) sepia(46%) saturate(204%) hue-rotate(343deg) brightness(94%) contrast(89%);
+  filter: invert(27%) sepia(46%) saturate(204%) hue-rotate(343deg)
+    brightness(94%) contrast(89%);
 }
 
 .icon:hover {
@@ -121,7 +122,7 @@ body {
 #projectsContainer {
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-items: center;
   align-items: center;
   text-align-last: center;
@@ -163,7 +164,7 @@ body {
   padding-bottom: 0;
   justify-content: center;
   margin: 0;
-  color: #2C3B38;
+  color: #2c3b38;
 }
 
 #contact {
