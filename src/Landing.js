@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useInView, useAnimate } from "framer-motion";
-import { Stack, Row, Col, Card } from "react-bootstrap";
+import { Stack, Container, Card } from "react-bootstrap";
 
 const Landing = () => {
   const [scope, animate] = useAnimate();
@@ -17,6 +17,7 @@ const Landing = () => {
   return (
     <section id="landing">
       <motion.div ref={scope} transition={"spring"} animate={{ scale: 1.2 }}>
+        <Container id="hero">
         <Stack>
           <Card className="hero">
             <Card.Title className="hero-title">
@@ -27,6 +28,7 @@ const Landing = () => {
             </Card.Body>
           </Card>{" "}
         </Stack>
+        </Container>
       </motion.div>
     </section>
   );

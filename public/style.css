@@ -1,3 +1,5 @@
+@media only screen and (min-width: 768px) {
+
 * {
   font-family: "Montserrat", sans-serif !important;
   margin: 0;
@@ -19,12 +21,14 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  margin: 2rem;
   padding-top: 3rem;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   display: flex;
-  position: relative;
 }
+
 
 .card {
   flex-wrap: wrap;
@@ -93,7 +97,7 @@ body {
 }
 
 .hero-title.card-title {
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-left: 4rem;
   margin-top: 3rem;
   margin-bottom: 0;
@@ -113,6 +117,13 @@ body {
   flex-grow: 2;
 }
 
+#aboutContainer {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 8rem;
+  padding-top: 3rem;
+}
+
 #techCard {
   flex-wrap: wrap;
   flex-direction: column;
@@ -120,9 +131,15 @@ body {
 }
 
 #projectsContainer {
-  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
   flex-direction: column;
-  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
   text-align-last: center;
@@ -173,4 +190,5 @@ body {
   width: 60rem;
   border: none;
   background-color: transparent;
+}
 }

@@ -35,7 +35,7 @@ const About = () => {
           animate={animate}
           initial="hidden"
         >
-          <Container>
+          <Container id="aboutContainer">
             <Card>
               <Card.Title>About</Card.Title>
               <Card.Body>

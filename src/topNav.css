@@ -24,3 +24,13 @@
 .nav-link:hover {
   color: #5B98A6;
 }
+
+.icon {
+  filter: invert(27%) sepia(46%) saturate(204%) hue-rotate(343deg)
+    brightness(94%) contrast(89%);
+}
+
+.icon:hover {
+  filter: none;
+  background-color: #5b98a6;
+}
