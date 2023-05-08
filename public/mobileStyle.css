@@ -17,5 +17,12 @@
     height: inherit;
     margin: 0 auto;
   }
-
+  .card {
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+    border: none;
+    text-align-last: left;
+    background-color: transparent;
+  }
 }
