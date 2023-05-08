@@ -10,7 +10,28 @@ const TopNav = () => {
     <>
       <Nav className="topnav" id="navbar" variant="pills">
         <Navbar expand="lg">
-          <Nav.Item className="nav-item">
+
+          <Nav.Item className="nav-item-left">
+            <Nav.Link href="/">
+              <Image className="icon" src="assets/home.png" width="20"></Image>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item-left">
+            <Nav.Link href="#about">About</Nav.Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item-left">
+            <Nav.Link href="#tech">Tech</Nav.Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item-left">
+            <Nav.Link href="#projects">Projects</Nav.Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item-left">
+            <Nav.Link href="#writing">Writing</Nav.Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item-left">
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav.Item>
+          <Nav.Item className="nav-item-right">
             <Nav.Link href="https://github.com/ndeyoung2">
               <Image
                 className="icon"
@@ -19,7 +40,7 @@ const TopNav = () => {
               ></Image>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item className="nav-item">
+          <Nav.Item className="nav-item-right">
             <Nav.Link href="https://www.linkedin.com/in/natalie-deyoung-ricci/">
               <Image
                 className="icon"
@@ -27,26 +48,6 @@ const TopNav = () => {
                 width="20"
               ></Image>
             </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item">
-            <Nav.Link href="/">
-              <Image className="icon" src="assets/home.png" width="20"></Image>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item">
-            <Nav.Link href="#about">About</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item">
-            <Nav.Link href="#tech">Tech</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item">
-            <Nav.Link href="#projects">Projects</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item">
-            <Nav.Link href="#writing">Writing</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item">
-            <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav.Item>
         </Navbar>
       </Nav>

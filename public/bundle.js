@@ -7503,23 +7503,7 @@ var TopNav = function TopNav() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_3__["default"], {
     expand: "lg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
-    href: "https://github.com/ndeyoung2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "icon",
-    src: "assets/github_icon.png",
-    width: "20"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
-    href: "https://www.linkedin.com/in/natalie-deyoung-ricci/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "icon",
-    src: "assets/linkedin_icon.webp",
-    width: "20"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
+    className: "nav-item-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -7527,26 +7511,42 @@ var TopNav = function TopNav() {
     src: "assets/home.png",
     width: "20"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
+    className: "nav-item-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#about"
   }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
+    className: "nav-item-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#tech"
   }, "Tech")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
+    className: "nav-item-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#projects"
   }, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
+    className: "nav-item-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#writing"
   }, "Writing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    className: "nav-item"
+    className: "nav-item-left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
     href: "#contact"
-  }, "Contact")))));
+  }, "Contact")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item-right"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
+    href: "https://github.com/ndeyoung2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "icon",
+    src: "assets/github_icon.png",
+    width: "20"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+    className: "nav-item-right"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
+    href: "https://www.linkedin.com/in/natalie-deyoung-ricci/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "icon",
+    src: "assets/linkedin_icon.webp",
+    width: "20"
+  }))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TopNav);
 
@@ -7813,7 +7813,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #594B41;\n}\n\n.nav-link:hover {\n  color: #5B98A6;\n}\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,WAAW;EACX,UAAU;EACV,2BAA2B;EAC3B,YAAY;EACZ,sBAAsB;EACtB,6BAA6B;EAC7B,0BAA0B;AAC5B;;AAEA;EACE,qBAAqB;AACvB;;CAEC;EACC,kBAAkB;EAClB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin: 0px;\n  padding: 0;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: right;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #594B41;\n}\n\n.nav-link:hover {\n  color: #5B98A6;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".topnav {\n  position: fixed;\n  top: 0;\n  right: 0;\n  left: 15px;\n  float: left;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: left;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #594B41;\n}\n\n.nav-link:hover {\n  color: #5B98A6;\n}\n", "",{"version":3,"sources":["webpack://./src/topNav.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,MAAM;EACN,QAAQ;EACR,UAAU;EACV,WAAW;EACX,2BAA2B;EAC3B,YAAY;EACZ,qBAAqB;EACrB,6BAA6B;EAC7B,0BAA0B;AAC5B;;AAEA;EACE,qBAAqB;AACvB;;CAEC;EACC,kBAAkB;EAClB,WAAW;EACX,cAAc;AAChB;;AAEA;EACE,cAAc;AAChB","sourcesContent":[".topnav {\n  position: fixed;\n  top: 0;\n  right: 0;\n  left: 15px;\n  float: left;\n  min-width: 100vh !important;\n  z-index: 100;\n  justify-content: left;\n  background-color: transparent;\n  backdrop-filter: blur(5px);\n}\n\n.navbar {\n  align-items: flex-end;\n}\n\n a.nav-link {\n  position: relative;\n  right: 25px;\n  color: #594B41;\n}\n\n.nav-link:hover {\n  color: #5B98A6;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
