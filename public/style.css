@@ -19,10 +19,8 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  margin-bottom: 6rem;
   margin-top: 3rem;
   padding-top: 3rem;
-  padding-bottom: 6rem;
   flex-flow: column wrap;
   display: flex;
   position: relative;
@@ -95,10 +93,11 @@ body {
 }
 
 .hero-title.card-title {
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-left: 4rem;
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 4rem;
   font-weight: bold;
 }
@@ -106,6 +105,7 @@ body {
 .hero-body.card-body {
   font-size: 3rem;
   padding-left: 4rem;
+  padding-top: 0;
   font-weight: normal;
 }
 
