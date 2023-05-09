@@ -8,7 +8,7 @@
   html {
     height: 100%;
   }
-  body {
+  /* body {
     margin: 0;
     padding: 0;
     display: block;
@@ -16,6 +16,17 @@
     width: 600px;
     height: inherit;
     margin: 0 auto;
-  }
+  } */
+  /* .container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 2rem;
+    margin: 2rem;
+    padding-top: 3rem;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+  } */
 
 }
