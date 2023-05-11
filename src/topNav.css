@@ -15,12 +15,25 @@
   top: 0;
   right: 0;
   left: 15px;
-  float: left;
-  min-width: 100vh !important;
+  display: flex;
+  min-width: 100vw !important;
   z-index: 100;
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
   background-color: transparent;
   backdrop-filter: blur(5px);
+}
+
+.nav-item-left{
+display: grid;
+grid-auto-flow: column;
+list-style-type: none;
+}
+
+.nav-item-right{
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
 }
 
 .navbar {
@@ -28,8 +41,6 @@
 }
 
  a.nav-link {
-  position: relative;
-  right: 25px;
   color: #594B41;
 }
 
