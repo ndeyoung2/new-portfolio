@@ -24,23 +24,21 @@
   backdrop-filter: blur(5px);
 }
 
-.nav-item-left{
-display: grid;
-grid-auto-flow: column;
-list-style-type: none;
-}
 
-.nav-item-right{
+
+ul.nav-link{
   display: grid;
   grid-auto-flow: column;
   list-style-type: none;
+  align-items: right;
+  color: #594B41;
 }
 
-.navbar {
-  align-items: flex-end;
+li.right.nav-link {
+  align-items: right;
+  color: #594B41;
 }
-
- a.nav-link {
+li.left.nav-link {
   color: #594B41;
 }
 

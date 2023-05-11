@@ -7,47 +7,51 @@ import { Nav, Navbar, Container, Image } from "react-bootstrap";
 const TopNav = () => {
   return (
     <>
-    <Container>
-      <Nav className="topnav" id="navbar" variant="pills">
-        <Nav.Item className="nav-item-left">
-            <Nav.Link href="https://github.com/ndeyoung2">
+      <Container>
+        <Navbar className="topnav" id="navbar" variant="pills">
+          <Nav as="ul">
+            <Nav.Link
+              as="li"
+              className="left"
+              href="https://github.com/ndeyoung2"
+            >
               <Image
                 className="icon"
                 src="assets/github_icon.png"
                 width="20"
               ></Image>
             </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item-left">
-            <Nav.Link href="https://www.linkedin.com/in/natalie-deyoung-ricci/">
+            <Nav.Link
+              as="li"
+              className="left"
+              href="https://www.linkedin.com/in/natalie-deyoung-ricci/"
+            >
               <Image
                 className="icon"
                 src="assets/linkedin_icon.webp"
                 width="20"
               ></Image>
             </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item-right">
-            <Nav.Link href="/">
+            <Nav.Link as="li" className="right" href="/">
               <Image className="icon" src="assets/home.png" width="20"></Image>
             </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item-right">
-            <Nav.Link href="#about">About</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item-right">
-            <Nav.Link href="#tech">Tech</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item-right">
-            <Nav.Link href="#projects">Projects</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item-right">
-            <Nav.Link href="#writing">Writing</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="nav-item-right">
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav.Item>
-      </Nav>
+            <Nav.Link as="li" className="right" href="#about">
+              About
+            </Nav.Link>
+            <Nav.Link as="li" className="right" href="#tech">
+              Tech
+            </Nav.Link>
+            <Nav.Link as="li" className="right" href="#projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link as="li" className="right" href="#writing">
+              Writing
+            </Nav.Link>
+            <Nav.Link as="li" className="right" href="#contact">
+              Contact
+            </Nav.Link>
+          </Nav>
+        </Navbar>
       </Container>
     </>
   );
