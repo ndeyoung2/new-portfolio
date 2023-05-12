@@ -2,8 +2,6 @@ import React from "react";
 import "./topNav.css";
 import { Nav, Navbar, Container, Image } from "react-bootstrap";
 
-//node_modules/bootstrap-icons/icons/git.svg
-
 const TopNav = () => {
   return (
     <>
