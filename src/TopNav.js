@@ -5,7 +5,6 @@ import { Nav, Navbar, Container, Image } from "react-bootstrap";
 const TopNav = () => {
   return (
     <>
-      <Container>
         <Navbar className="topnav" id="navbar" variant="pills">
           <Nav as="ul">
             <Nav.Link
@@ -50,7 +49,6 @@ const TopNav = () => {
             </Nav.Link>
           </Nav>
         </Navbar>
-      </Container>
     </>
   );
 };
