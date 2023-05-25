@@ -37,7 +37,7 @@ const Projects = () => {
                 <Card
                   id="projectsCard"
                   as={Link}
-                  to="https://intellego.onrender.com/"
+                  to="https://github.com/ndeyoung2/Intellego"
                 >
                   <Figure>
                     <Figure.Image

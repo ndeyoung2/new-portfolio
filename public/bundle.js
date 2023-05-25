@@ -7335,7 +7335,7 @@ var Projects = function Projects() {
   }, "Intellego"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["default"], {
     id: "projectsCard",
     as: react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link,
-    to: "https://intellego.onrender.com/"
+    to: "https://github.com/ndeyoung2/Intellego"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["default"].Image, {
     width: 300,
     height: 200,
