@@ -1,4 +1,4 @@
-/* @media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   * {
     flex-wrap: wrap;
     width: 600px;
@@ -8,7 +8,7 @@
     height: 50%;
   }
 
-} */
+}
 
 .topnav {
   position: fixed;
