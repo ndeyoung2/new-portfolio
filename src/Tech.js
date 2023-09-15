@@ -28,9 +28,7 @@ const Tech = () => {
     "Bootstrap",
     "Material UI",
     "Chart.js",
-    "Formik",
     "Framer-Motion",
-    "Socket.io",
   ];
 
   return (
@@ -44,8 +42,7 @@ const Tech = () => {
             <Card.Body justify-content="center">
               Trained in object-oriented programming, I work primarily in
               JavaScript with the PERN stack, but am always looking to expand my
-              skills. Currently, I am learning Typescript, Next.js, and I have
-              some familiarity with Docker as well.
+              skills.
               <Card.Text>
                 {tech.map((item) => (
                   <Button className="button" key={item}>

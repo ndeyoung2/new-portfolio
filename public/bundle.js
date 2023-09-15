@@ -7452,7 +7452,7 @@ var Tech = function Tech() {
       });
     }
   }, [isInView]);
-  var tech = ["JavaScript", "Node", "React", "Redux", "React Native", "Express", "Sequelize", "PostgreSQL", "HTML", "CSS", "Bootstrap", "Material UI", "Chart.js", "Formik", "Framer-Motion", "Socket.io"];
+  var tech = ["JavaScript", "Node", "React", "Redux", "React Native", "Express", "Sequelize", "PostgreSQL", "HTML", "CSS", "Bootstrap", "Material UI", "Chart.js", "Framer-Motion"];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
     ref: scope,
     transition: "spring",
@@ -7465,7 +7465,7 @@ var Tech = function Tech() {
     id: "tech"
   }, "Tools and Tech Stack"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Body, {
     "justify-content": "center"
-  }, "Trained in object-oriented programming, I work primarily in JavaScript with the PERN stack, but am always looking to expand my skills. Currently, I am learning Typescript, Next.js, and I have some familiarity with Docker as well.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Text, null, tech.map(function (item) {
+  }, "Trained in object-oriented programming, I work primarily in JavaScript with the PERN stack, but am always looking to expand my skills.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["default"].Text, null, tech.map(function (item) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["default"], {
       className: "button",
       key: item
